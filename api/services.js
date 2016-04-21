@@ -41,8 +41,8 @@ if (fs.existsSync(classifierFile))
 
 module.exports = {
   dialog : watson.dialog({
-    username: '<username>',
-    password: '<password>',
+    username: 'zTYugyY2ktYR',
+    password: 'e62fbec6-f179-4a7d-a30c-671a6d94776e',
     version: 'v1',
     path: { dialog_id: DIALOG_ID }
   }),
@@ -52,8 +52,8 @@ module.exports = {
   movieDB: require(TMDB_API_KEY ? './moviedb' : './moviedb-mock')(TMDB_API_KEY),
 
   classifier: watson.natural_language_classifier({
-    username: '<username>',
-    password: '<password>',
+    username: 'iZHK1oc4Igvg',
+    password: '8ff72622-235b-4f05-becf-476a2b39ad56',
     version: 'v1',
     path: { classifier_id: CLASSIFIER_ID }
   }),
