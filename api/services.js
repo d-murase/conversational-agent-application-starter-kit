@@ -29,12 +29,12 @@ var classifierFile = __dirname + '/../training/classifier_id';
 var TMDB_API_KEY = process.env.TMDB_API_KEY || '651b1dc039901cbde36385461dc98948';
 
 // 2. dialog id - see training/setup.js
-var DIALOG_ID = 'TYPE DIALOG ID HERE';
+var DIALOG_ID = '0c204f67-1def-4331-b43d-f34fad9e89ec';
 if (fs.existsSync(dialogFile))
   DIALOG_ID = trim(fs.readFileSync(dialogFile, 'utf8'));
 
 // 3. classifier id - see training/setup.js
-var CLASSIFIER_ID = 'TYPE CLASSIFIER ID HERE';
+var CLASSIFIER_ID = '3a84dfx64-nlc-489';
 if (fs.existsSync(classifierFile))
   CLASSIFIER_ID = trim(fs.readFileSync(classifierFile, 'utf8'));
 
