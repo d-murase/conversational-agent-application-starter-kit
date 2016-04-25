@@ -36,15 +36,15 @@ var classifierTrainingFile = __dirname + '/classifier_training.csv';
 
 var dialogService = watson.dialog({
   url: 'https://gateway.watsonplatform.net/dialog/api',
-  username: 'USERNAME',
-  password: 'PASSWORD',
+  username: 'e62fbec6-f179-4a7d-a30c-671a6d94776e',
+  password: 'zTYugyY2ktYR',
   version: 'v1'
 });
 
 var classifierService = watson.natural_language_classifier({
   url: 'https://gateway.watsonplatform.net/natural-language-classifier/api',
-  username: 'USERNAME',
-  password: 'PASSWORD',
+  username: '8ff72622-235b-4f05-becf-476a2b39ad56',
+  password: 'iZHK1oc4Igvg',
   version: 'v1'
 });
 
