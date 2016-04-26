@@ -4,8 +4,8 @@
         <folder label="Main">
             <output id="output_2508575">
                 <prompt selectionType="SEQUENTIAL">
-                    <item>‚ ‚È‚½‚ð‰½‚ÆŒÄ‚×‚Î‚¢‚¢‚Å‚·‚©H</item>
-                    <item>‚ ‚È‚½‚Ì–¼‘O‚Í‰½‚Å‚·‚©H</item>
+                    <item>ã‚ãªãŸã‚’ä½•ã¨å‘¼ã¹ã°ã„ã„ã§ã™ã‹ï¼Ÿ</item>
+                    <item>ã‚ãªãŸã®åå‰ã¯ä½•ã§ã™ã‹ï¼Ÿ</item>
                 </prompt>
                 <getUserInput id="getUserInput_2508591">
                     <input isAutoLearnCandidate="true"
@@ -28,19 +28,19 @@
                         <grammar>
                             <item>Movie-related</item>
                             <item>$ (BY_OTHER_MOVIE)={Topic}</item>
-                            <item>$ ã‰fŽžŠÔ</item>
-                            <item>$ Œ€ê</item>
-                            <item>$ ƒtƒ@ƒ“ƒ_ƒ“ƒS</item>
-                            <item>$ ŽŽŽÊ</item>
-                            <item>$ ƒŒƒrƒ…[</item>
-                            <item>$ ”á•]</item>
-                            <item>$ •]˜_</item>
-                            <item>$ ŒÃ‚¢‰f‰æ</item>
-                            <item>$ ŒÃ“T‰f‰æ</item>
-                            <item>$ ƒI[ƒ‹ƒfƒB[ƒY</item>
-                            <item>$ ƒNƒ‰ƒVƒbƒN</item>
-                            <item>$ —\•Ò</item>
-                            <item>$ ƒŒƒrƒ…[</item>
+                            <item>$ ä¸Šæ˜ æ™‚é–“</item>
+                            <item>$ åŠ‡å ´</item>
+                            <item>$ ãƒ•ã‚¡ãƒ³ãƒ€ãƒ³ã‚´</item>
+                            <item>$ è©¦å†™</item>
+                            <item>$ ãƒ¬ãƒ“ãƒ¥ãƒ¼</item>
+                            <item>$ æ‰¹è©•</item>
+                            <item>$ è©•è«–</item>
+                            <item>$ å¤ã„æ˜ ç”»</item>
+                            <item>$ å¤å…¸æ˜ ç”»</item>
+                            <item>$ ã‚ªãƒ¼ãƒ«ãƒ‡ã‚£ãƒ¼ã‚º</item>
+                            <item>$ ã‚¯ãƒ©ã‚·ãƒƒã‚¯</item>
+                            <item>$ äºˆå‘Šç·¨</item>
+                            <item>$ ãƒ¬ãƒ“ãƒ¥ãƒ¼</item>
                             <item>$ (DINING)={Topic}</item>
                             <item>$ (WEATHER)={Topic}</item>
                             <item>$ (TRAFFIC)={Topic}</item>
@@ -50,29 +50,29 @@
                     </input>
                     <input>
                         <grammar>
-                            <item>—\”õ</item>
-                            <item>$ ‚ ‚È‚½‚Í‰½‚ð’m‚Á‚Ä‚¢‚Ü‚·‚©</item>
-                            <item>$ ‚ ‚È‚½‚Í‰½‚ªo—ˆ‚Ü‚·‚©</item>
-                            <item>$ Ž„‚É‰½‚ª‚Å‚«‚é</item>
-                            <item>$ ‚ ‚È‚½‚Í‰½‚ð“`‚¦‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·‚©</item>
-                            <item>$ ‚Ç‚ñ‚È</item>
-                            <item>$ ‚ ‚È‚½‚Í‘¼‚É‰½‚ð’m‚Á‚Ä‚¢‚Ü‚·‚©</item>
-                            <item>$ ‚ ‚È‚½‚ÌŽ‚Á‚Ä‚¢‚È‚¢î•ñ</item>
-                            <item>$ ‚ ‚È‚½‚Í’m‚Á‚Ä‚¢‚Ü‚·‚©</item>
-                            <item>$ ‚ ‚È‚½‚Í‚Å‚«‚é</item>
-                            <item>$ ‚ ‚È‚½‚ªî•ñ‚ðŽ‚Á‚Ä‚¢‚Ü‚·</item>
-                            <item>$ Ž„‚Í‚Å‚«‚Ü‚·</item>
+                            <item>äºˆå‚™</item>
+                            <item>$ ã‚ãªãŸã¯ä½•ã‚’çŸ¥ã£ã¦ã„ã¾ã™ã‹</item>
+                            <item>$ ã‚ãªãŸã¯ä½•ãŒå‡ºæ¥ã¾ã™ã‹</item>
+                            <item>$ ç§ã«ä½•ãŒã§ãã‚‹</item>
+                            <item>$ ã‚ãªãŸã¯ä½•ã‚’ä¼ãˆã‚‹ã“ã¨ãŒã§ãã¾ã™ã‹</item>
+                            <item>$ ã©ã‚“ãª</item>
+                            <item>$ ã‚ãªãŸã¯ä»–ã«ä½•ã‚’çŸ¥ã£ã¦ã„ã¾ã™ã‹</item>
+                            <item>$ ã‚ãªãŸã®æŒã£ã¦ã„ãªã„æƒ…å ±</item>
+                            <item>$ ã‚ãªãŸã¯çŸ¥ã£ã¦ã„ã¾ã™ã‹</item>
+                            <item>$ ã‚ãªãŸã¯ã§ãã‚‹</item>
+                            <item>$ ã‚ãªãŸãŒæƒ…å ±ã‚’æŒã£ã¦ã„ã¾ã™</item>
+                            <item>$ ç§ã¯ã§ãã¾ã™</item>
                         </grammar>
                         <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                         <goto ref="search_2414738"/>
                     </input>
                     <input>
                         <grammar>
-                            <item>‚È‚º’m‚é•K—v‚ª‚ ‚é‚Ì‚Å‚·‚©B</item>
-                            <item>$ ‚È‚º</item>
-                            <item>$ ’m‚é•K—v‚ª‚ ‚é</item>
-                            <item>$ ‚±‚ê‚ðŽg‚Á‚Ä</item>
-                            <item>$ ‚»‚ê‚Ås‚¢‚Ü‚·</item>
+                            <item>ãªãœçŸ¥ã‚‹å¿…è¦ãŒã‚ã‚‹ã®ã§ã™ã‹ã€‚</item>
+                            <item>$ ãªãœ</item>
+                            <item>$ çŸ¥ã‚‹å¿…è¦ãŒã‚ã‚‹</item>
+                            <item>$ ã“ã‚Œã‚’ä½¿ã£ã¦</item>
+                            <item>$ ãã‚Œã§è¡Œã„ã¾ã™</item>
                         </grammar>
                         <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                         <output>
@@ -84,25 +84,25 @@
                     </input>
                     <input>
                         <grammar>
-                            <item>Ž„‚ÍA‚»‚ê‚ð—^‚¦‚½‚­‚ ‚è‚Ü‚¹‚ñI</item>
-                            <item>$ ‚µ‚½‚­‚ ‚è‚Ü‚¹‚ñ</item>
-                            <item>$ ‚¢‚¢‚¦</item>
-                            <item>$ ‚²‚Ý</item>
-                            <item>$ ‘å‚«‚È‚¨¢˜b</item>
+                            <item>ç§ã¯ã€ãã‚Œã‚’ä¸ŽãˆãŸãã‚ã‚Šã¾ã›ã‚“ï¼</item>
+                            <item>$ ã—ãŸãã‚ã‚Šã¾ã›ã‚“</item>
+                            <item>$ ã„ã„ãˆ</item>
+                            <item>$ ã”ã¿</item>
+                            <item>$ å¤§ããªãŠä¸–è©±</item>
                         </grammar>
                         <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                         <output>
                             <prompt selectionType="RANDOM">
-                                <item>‚»‚ê‚ÅŒ‹\‚Å‚·B</item>
+                                <item>ãã‚Œã§çµæ§‹ã§ã™ã€‚</item>
                             </prompt>
                             <goto ref="output_2508831"/>
                         </output>
                     </input>
                     <input id="input_2530402">
                         <grammar>
-                            <item>Ž„‚Ì–¼‘O‚Í</item>
-                            <item>Ž„‚Ì–¼‘O‚Í (DYNAMIC_DATA)={User_Name}</item>
-                            <item>Ž„‚Í (DYNAMIC_DATA)={User_Name}</item>
+                            <item>ç§ã®åå‰ã¯</item>
+                            <item>ç§ã®åå‰ã¯ (DYNAMIC_DATA)={User_Name}</item>
+                            <item>ç§ã¯ (DYNAMIC_DATA)={User_Name}</item>
                             <item>(DYNAMIC_DATA)={User_Name} </item>
                             <item>(DYNAMIC_DATA)={User_Name} GiveName</item>
                         </grammar>
@@ -110,7 +110,7 @@
                         <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                         <output>
                             <prompt>
-                                <item>‚±‚ñ‚É‚¿‚Í {User_Name}!</item>
+                                <item>ã“ã‚“ã«ã¡ã¯ {User_Name}!</item>
                             </prompt>
                             <goto ref="output_2508831"/>
                         </output>
@@ -118,7 +118,7 @@
                 </getUserInput>
                 <output id="output_2508831">
                     <prompt selectionType="RANDOM">
-                        <item>Œ»Ýã‰f‚³‚ê‚Ä‚¢‚é‚©A‚·‚®‚Éã‰f‚³‚ê‚é‰f‰æ‚ðŒ©‚Â‚¯‚½‚¢‚Å‚·‚©H</item>
+                        <item>ç¾åœ¨ä¸Šæ˜ ã•ã‚Œã¦ã„ã‚‹ã‹ã€ã™ãã«ä¸Šæ˜ ã•ã‚Œã‚‹æ˜ ç”»ã‚’è¦‹ã¤ã‘ãŸã„ã§ã™ã‹ï¼Ÿ</item>
                     </prompt>
                     <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                     <action varName="Class2" operator="SET_TO_BLANK"/>
@@ -128,8 +128,8 @@
             </output>
             <output id="output_2414737">
                 <prompt selectionType="RANDOM">
-                    <item>‚Ç‚ñ‚ÈŒä—p‚Å‚µ‚å‚¤‚©H</item>
-                    <item>‚Ç‚¤‚¢‚¤‚²—pŒ‚Å‚·‚©H</item>
+                    <item>ã©ã‚“ãªå¾¡ç”¨ã§ã—ã‚‡ã†ã‹ï¼Ÿ</item>
+                    <item>ã©ã†ã„ã†ã”ç”¨ä»¶ã§ã™ã‹ï¼Ÿ</item>
                 </prompt>
                 <getUserInput id="getUserInput_2414745">
                     <search id="search_2414738" ref="folder_2414695"/>
@@ -191,7 +191,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                                     <getUserInput>
                                     <input>
                                     <grammar>
-                                    <item>‚Í‚¢</item>
+                                    <item>ã¯ã„</item>
                                     </grammar>
                                     <output>
                                     <prompt/>
@@ -221,7 +221,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>‚¢‚¢‚¦</item>
+                                    <item>ã„ã„ãˆ</item>
                                     </grammar>
                                     <output>
                                     <prompt>
@@ -259,10 +259,10 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                         </if>
                         <output isInsertDNRStatement="true" id="output_2531608">
                             <prompt selectionType="SEQUENTIAL">
-                                <item>Ž„‚Í‚ ‚È‚½‚ª‰½‚ðˆÓ–¡‚·‚é‚©‚í‚©‚è‚Ü‚¹‚ñBTry &lt;i&gt;What's in theaters?&lt;/i&gt;
+                                <item>ç§ã¯ã‚ãªãŸãŒä½•ã‚’æ„å‘³ã™ã‚‹ã‹ã‚ã‹ã‚Šã¾ã›ã‚“ã€‚Try &lt;i&gt;What's in theaters?&lt;/i&gt;
 </item>
-                                <item>Žc”O‚Å‚·‚ªA‚Ý‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B‰º‚ÌƒAƒCƒRƒ“‚ð‰Ÿ‚µ‚ÄA‚à‚¤ˆê‰ñŽŽ‚µ‚Ü‚µ‚å‚¤B</item>
-                                <item>‚²‚ß‚ñ‚È‚³‚¢AŽ„‚Í—‰ð‚Å‚«‚Ü‚¹‚ñB Try &lt;i&gt;What's playing?&lt;/i&gt;</item>
+                                <item>æ®‹å¿µã§ã™ãŒã€ã¿ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚ä¸‹ã®ã‚¢ã‚¤ã‚³ãƒ³ã‚’æŠ¼ã—ã¦ã€ã‚‚ã†ä¸€å›žè©¦ã—ã¾ã—ã‚‡ã†ã€‚</item>
+                                <item>ã”ã‚ã‚“ãªã•ã„ã€ç§ã¯ç†è§£ã§ãã¾ã›ã‚“ã€‚ Try &lt;i&gt;What's playing?&lt;/i&gt;</item>
                             </prompt>
                             <goto ref="##special_DNR_GET_USER_INPUT_NODE_ID"/>
                         </output>
@@ -273,9 +273,9 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                 <input>
                     <grammar>
                         <item>OK</item>
-                        <item>ƒnƒn</item>
-                        <item>‚²‚ß‚ñ</item>
-                        <item>–â‘è‚ ‚è‚Ü‚¹‚ñ</item>
+                        <item>ãƒãƒ</item>
+                        <item>ã”ã‚ã‚“</item>
+                        <item>å•é¡Œã‚ã‚Šã¾ã›ã‚“</item>
                     </grammar>
                     <goto ref="output_2449884"/>
                 </input>
@@ -286,7 +286,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
             <folder label="SYSTEM INITIATED SEQUENCES">
                 <output id="output_2449884">
                     <prompt selectionType="RANDOM">
-                        <item>Ž„‚ª‚ ‚È‚½‚Ì‚ðŽè“`‚¤‚±‚Æ‚ª‚Å‚«‚é‚à‚Ì‚ª‰½‚©‚Ù‚©‚É‚ ‚è‚Ü‚·‚©H</item>
+                        <item>ç§ãŒã‚ãªãŸã®ã‚’æ‰‹ä¼ã†ã“ã¨ãŒã§ãã‚‹ã‚‚ã®ãŒä½•ã‹ã»ã‹ã«ã‚ã‚Šã¾ã™ã‹ï¼Ÿ</item>
                     </prompt>
                     <action varName="Page" operator="SET_TO">new</action>
                     <action varName="Current_Index" operator="SET_TO">0</action>
@@ -305,13 +305,13 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     <getUserInput>
                         <input>
                             <grammar>
-                                <item>‚Í‚¢</item>
+                                <item>ã¯ã„</item>
                             </grammar>
                             <goto ref="output_2414737"/>
                         </input>
                         <input>
                             <grammar>
-                                <item>‚¢‚¢‚¦</item>
+                                <item>ã„ã„ãˆ</item>
                             </grammar>
                             <output>
                                 <prompt selectionType="RANDOM">
@@ -325,28 +325,28 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                 </output>
                 <output id="output_2458386">
                     <prompt selectionType="RANDOM">
-                        <item>’T‚µ‚Ä‚é‚à‚Ì‚ðŒ©‚Â‚¯‚Ü‚µ‚½‚©, {User_Name}?</item>
+                        <item>æŽ¢ã—ã¦ã‚‹ã‚‚ã®ã‚’è¦‹ã¤ã‘ã¾ã—ãŸã‹, {User_Name}?</item>
                     </prompt>
                     <getUserInput>
                         <input>
                             <grammar>
-                                <item>‚Í‚¢</item>
+                                <item>ã¯ã„</item>
                             </grammar>
                             <action varName="Request_Success" operator="SET_TO_YES"/>
                             <output>
                                 <prompt>
-                                    <item>‚·‚Î‚ç‚µ‚¢I</item>
+                                    <item>ã™ã°ã‚‰ã—ã„ï¼</item>
                                 </prompt>
                                 <output id="output_2458390">
                                     <prompt selectionType="RANDOM">
-                                    <item>‚³‚æ‚¤‚È‚ç</item>
+                                    <item>ã•ã‚ˆã†ãªã‚‰</item>
                                     </prompt>
                                     <action varName="Terminal_Exchange" operator="SET_TO_YES"/>
                                     <action varName="Greeting_Count" operator="SET_TO">0</action>
                                     <getUserInput>
                                     <input>
                                     <grammar>
-                                    <item>ƒoƒCƒoƒC</item>
+                                    <item>ãƒã‚¤ãƒã‚¤</item>
                                     <item>$ goodbye</item>
                                     </grammar>
                                     <output id="output_2510314">
@@ -370,17 +370,17 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                         </input>
                         <input>
                             <grammar>
-                                <item>‚¢‚¢‚¦</item>
+                                <item>ã„ã„ãˆ</item>
                             </grammar>
                             <action varName="Request_Success" operator="SET_TO_NO"/>
                             <output>
                                 <prompt>
-                                    <item>‚ ‚ç‚¢‚â‚¾B‚à‚¤ˆê“xŽŽ‚µ‚Ä‚Ý‚Ü‚·‚©H</item>
+                                    <item>ã‚ã‚‰ã„ã‚„ã ã€‚ã‚‚ã†ä¸€åº¦è©¦ã—ã¦ã¿ã¾ã™ã‹ï¼Ÿ</item>
                                 </prompt>
                                 <getUserInput>
                                     <input>
                                     <grammar>
-                                    <item>‚¢‚¢‚¦</item>
+                                    <item>ã„ã„ãˆ</item>
                                     </grammar>
                                     <action
                                     varName="Terminal_Exchange" operator="SET_TO_NO"/>
@@ -393,11 +393,11 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>‚Í‚¢</item>
+                                    <item>ã¯ã„</item>
                                     </grammar>
                                     <output>
                                     <prompt>
-                                    <item>OKB‚Ç‚ñ‚È‚²—p‚Å‚µ‚å‚¤‚©H</item>
+                                    <item>OKã€‚ã©ã‚“ãªã”ç”¨ã§ã—ã‚‡ã†ã‹ï¼Ÿ</item>
                                     </prompt>
                                     <goto ref="getUserInput_2414745"/>
                                     </output>
@@ -410,29 +410,29 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                 </output>
                 <output id="output_2459375">
                     <prompt selectionType="RANDOM">
-                        <item>‚±‚ê‚ÍŠy‚µ‚Ý‚Å‚·B‚µ‚©‚µA‚¢‚­‚Â‚©‚Ì‰f‰æ‚ð’²‚×‚½‚­‚ ‚è‚Ü‚¹‚ñ‚©H</item>
+                        <item>ã“ã‚Œã¯æ¥½ã—ã¿ã§ã™ã€‚ã—ã‹ã—ã€ã„ãã¤ã‹ã®æ˜ ç”»ã‚’èª¿ã¹ãŸãã‚ã‚Šã¾ã›ã‚“ã‹ï¼Ÿ</item>
                     </prompt>
                     <getUserInput id="getUserInput_2459376">
                         <input>
                             <grammar>
-                                <item>‚Í‚¢</item>
+                                <item>ã¯ã„</item>
                             </grammar>
                             <goto ref="output_2449874"/>
                         </input>
                         <input>
                             <grammar>
-                                <item>‚¢‚¢‚¦</item>
+                                <item>ã„ã„ãˆ</item>
                             </grammar>
                             <action varName="Small_Talk_Count" operator="SET_TO">0</action>
                             <output>
                                 <prompt selectionType="RANDOM">
-                                    <item>‚n‚jA‚·‚Î‚ç‚µ‚¢B</item>
+                                    <item>ï¼¯ï¼«ã€ã™ã°ã‚‰ã—ã„ã€‚</item>
                                 </prompt>
                             </output>
                         </input>
                         <input>
                             <grammar>
-                                <item>‚n‚j</item>
+                                <item>ï¼¯ï¼«</item>
                             </grammar>
                             <goto ref="output_2449874"/>
                         </input>
@@ -3111,9 +3111,9 @@ Say &lt;i&gt;got to go&lt;/i&gt; or &lt;i&gt;bye&lt;/i&gt; when you're finished.
                         </if>
                         <output>
                             <prompt selectionType="RANDOM">
-                                <item>ƒnƒ[</item>
-                                <item>‚±‚ñ‚É‚¿‚Í</item>
-                                <item>‚â‚ A‚±‚ñ‚É‚¿‚Í</item>
+                                <item>ãƒãƒ­ãƒ¼</item>
+                                <item>ã“ã‚“ã«ã¡ã¯</item>
+                                <item>ã‚„ã‚ã€ã“ã‚“ã«ã¡ã¯</item>
                             </prompt>
                             <output id="output_2459184">
                                 <prompt selectionType="RANDOM">
@@ -3406,76 +3406,76 @@ Say &lt;i&gt;got to go&lt;/i&gt; or &lt;i&gt;bye&lt;/i&gt; when you're finished.
             <folder label="Generic">
                 <concept>
                     <grammar>
-                        <item>ƒI[ƒP[</item>
-                        <item>ƒI[ƒP[</item>
-                        <item>Š´ŽÓ</item>
-                        <item>‚ ‚è‚ª‚Æ‚¤</item>
-                        <item>ƒI[ƒP[Š´ŽÓ</item>
-                        <item>ƒI[ƒP[‚ ‚è‚ª‚Æ‚¤</item>
-                        <item>ƒI[ƒP[Š´ŽÓ</item>
-                        <item>ƒI[ƒP[‚ ‚è‚ª‚Æ‚¤</item>
-                        <item>‚Ü‚±‚Æ‚É‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚·</item>
-                        <item>‚æ‚©‚Á‚½B‚ ‚è‚ª‚Æ‚¤</item>
-                        <item>‚í‚©‚Á‚½</item>
-                        <item>‘åä•v</item>
-                        <item>‚·‚Î‚ç‚µ‚¢‚Å‚·</item>
-                        <item>ƒN[ƒ‹</item>
-                        <item>‚ ‚ŸI</item>
-                        <item>‚ ‚ŸI</item>
-                        <item>ƒI[</item>
-                        <item>‚¨‚¨AƒI[ƒP[</item>
-                        <item>‚¨‚¨Aok </item>
-                        <item>‚ ‚ </item>
-                        <item>‚ ‚ AƒI[ƒP[</item>
-                        <item>‚ ‚ Aok</item>
-                        <item>‚í‚©‚Á‚½</item>
-                        <item>•ª‚©‚è‚Ü‚µ‚½I</item>
-                        <item>Š£”t</item>
-                        <item>‚Ç‚¤‚à</item>
+                        <item>ã‚ªãƒ¼ã‚±ãƒ¼</item>
+                        <item>ã‚ªãƒ¼ã‚±ãƒ¼</item>
+                        <item>æ„Ÿè¬</item>
+                        <item>ã‚ã‚ŠãŒã¨ã†</item>
+                        <item>ã‚ªãƒ¼ã‚±ãƒ¼æ„Ÿè¬</item>
+                        <item>ã‚ªãƒ¼ã‚±ãƒ¼ã‚ã‚ŠãŒã¨ã†</item>
+                        <item>ã‚ªãƒ¼ã‚±ãƒ¼æ„Ÿè¬</item>
+                        <item>ã‚ªãƒ¼ã‚±ãƒ¼ã‚ã‚ŠãŒã¨ã†</item>
+                        <item>ã¾ã“ã¨ã«ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™</item>
+                        <item>ã‚ˆã‹ã£ãŸã€‚ã‚ã‚ŠãŒã¨ã†</item>
+                        <item>ã‚ã‹ã£ãŸ</item>
+                        <item>å¤§ä¸ˆå¤«</item>
+                        <item>ã™ã°ã‚‰ã—ã„ã§ã™</item>
+                        <item>ã‚¯ãƒ¼ãƒ«</item>
+                        <item>ã‚ãï¼</item>
+                        <item>ã‚ãï¼</item>
+                        <item>ã‚ªãƒ¼</item>
+                        <item>ãŠãŠã€ã‚ªãƒ¼ã‚±ãƒ¼</item>
+                        <item>ãŠãŠã€ok </item>
+                        <item>ã‚ã‚</item>
+                        <item>ã‚ã‚ã€ã‚ªãƒ¼ã‚±ãƒ¼</item>
+                        <item>ã‚ã‚ã€ok</item>
+                        <item>ã‚ã‹ã£ãŸ</item>
+                        <item>åˆ†ã‹ã‚Šã¾ã—ãŸï¼</item>
+                        <item>ä¹¾æ¯</item>
+                        <item>ã©ã†ã‚‚</item>
                     </grammar>
                 </concept>
                 <concept>
                     <grammar>
-                        <item>ƒnƒ[</item>
-                        <item>‚±‚ñ‚É‚¿‚Í</item>
-                        <item>ƒI[ƒ‰</item>
-                        <item>‚æ‚¤</item>
-                        <item>‚â‚ </item>
-                        <item>‚Ë‚¦</item>
+                        <item>ãƒãƒ­ãƒ¼</item>
+                        <item>ã“ã‚“ã«ã¡ã¯</item>
+                        <item>ã‚ªãƒ¼ãƒ©</item>
+                        <item>ã‚ˆã†</item>
+                        <item>ã‚„ã‚</item>
+                        <item>ã­ãˆ</item>
                         <item>Heya</item>
                         <item>yello</item>
-                        <item>ƒAƒƒn</item>
-                        <item>‚â‚ A‚Ç‚¤‚à</item>
-                        <item>‚Ë‚¦A‚Ç‚¤‚à</item>
-                        <item>ƒnƒ[Aƒƒgƒ\ƒ“</item>
-                        <item>‚±‚ñ‚É‚¿‚ÍAƒƒgƒ\ƒ“</item>
-                        <item>ƒI[ƒ‰Aƒƒgƒ\ƒ“</item>
-                        <item>‚æ‚¤Aƒƒgƒ\ƒ“</item>
-                        <item>‚â‚ Aƒƒgƒ\ƒ“</item>
-                        <item>‚Ë‚¦Aƒƒgƒ\ƒ“</item>
+                        <item>ã‚¢ãƒ­ãƒ</item>
+                        <item>ã‚„ã‚ã€ã©ã†ã‚‚</item>
+                        <item>ã­ãˆã€ã©ã†ã‚‚</item>
+                        <item>ãƒãƒ­ãƒ¼ã€ãƒ¯ãƒˆã‚½ãƒ³</item>
+                        <item>ã“ã‚“ã«ã¡ã¯ã€ãƒ¯ãƒˆã‚½ãƒ³</item>
+                        <item>ã‚ªãƒ¼ãƒ©ã€ãƒ¯ãƒˆã‚½ãƒ³</item>
+                        <item>ã‚ˆã†ã€ãƒ¯ãƒˆã‚½ãƒ³</item>
+                        <item>ã‚„ã‚ã€ãƒ¯ãƒˆã‚½ãƒ³</item>
+                        <item>ã­ãˆã€ãƒ¯ãƒˆã‚½ãƒ³</item>
                         <item>Heya Watson</item>
                         <item>yello Watson</item>
-                        <item>ƒAƒƒnAƒƒgƒ\ƒ“</item>
-                        <item>‚â‚ A‚Ç‚¤‚àƒƒgƒ\ƒ“</item>
-                        <item>‚Ë‚¦A‚Ç‚¤‚àƒƒgƒ\ƒ“</item>
+                        <item>ã‚¢ãƒ­ãƒã€ãƒ¯ãƒˆã‚½ãƒ³</item>
+                        <item>ã‚„ã‚ã€ã©ã†ã‚‚ãƒ¯ãƒˆã‚½ãƒ³</item>
+                        <item>ã­ãˆã€ã©ã†ã‚‚ãƒ¯ãƒˆã‚½ãƒ³</item>
                     </grammar>
                 </concept>
                 <concept>
                     <grammar>
-                        <item>‚³‚æ‚¤‚È‚ç</item>
-                        <item>ƒoƒCƒoƒC</item>
-                        <item>‚¶‚á‚ ‚Ë</item>
-                        <item>‚³‚æ‚È‚ç</item>
-                        <item>Œã‚Å</item>
-                        <item>ƒoƒCƒoƒC</item>
-                        <item>‚Ü‚½Œã‚Å</item>
-                        <item>‚Ü‚½‚Ë</item>
-                        <item>‚¶‚á‚ ‚Ü‚½‚Ë</item>
-                        <item>‚¶‚á‚ ‚Ë</item>
-                        <item>‚¶‚á‚ ‚Ü‚½‚Ë</item>
-                        <item>‚³‚æ‚È‚ç</item>
-                        <item>‚¨‚â‚·‚Ý</item>
-                        <item>—Ç‚¢ˆê“ú‚ð</item>
+                        <item>ã•ã‚ˆã†ãªã‚‰</item>
+                        <item>ãƒã‚¤ãƒã‚¤</item>
+                        <item>ã˜ã‚ƒã‚ã­</item>
+                        <item>ã•ã‚ˆãªã‚‰</item>
+                        <item>å¾Œã§</item>
+                        <item>ãƒã‚¤ãƒã‚¤</item>
+                        <item>ã¾ãŸå¾Œã§</item>
+                        <item>ã¾ãŸã­</item>
+                        <item>ã˜ã‚ƒã‚ã¾ãŸã­</item>
+                        <item>ã˜ã‚ƒã‚ã­</item>
+                        <item>ã˜ã‚ƒã‚ã¾ãŸã­</item>
+                        <item>ã•ã‚ˆãªã‚‰</item>
+                        <item>ãŠã‚„ã™ã¿</item>
+                        <item>è‰¯ã„ä¸€æ—¥ã‚’</item>
                     </grammar>
                 </concept>
                 <concept>
