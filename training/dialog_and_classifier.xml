@@ -4,8 +4,8 @@
         <folder label="Main">
             <output id="output_2508575">
                 <prompt selectionType="SEQUENTIAL">
-                    <item>What can I call you?</item>
-                    <item>What's your name?</item>
+                    <item>あなたを何と呼べばいいですか？</item>
+                    <item>あなたの名前は何ですか？</item>
                 </prompt>
                 <getUserInput id="getUserInput_2508591">
                     <input isAutoLearnCandidate="true"
@@ -28,19 +28,19 @@
                         <grammar>
                             <item>Movie-related</item>
                             <item>$ (BY_OTHER_MOVIE)={Topic}</item>
-                            <item>$ showtimes</item>
-                            <item>$ theaters</item>
-                            <item>$ fandango</item>
-                            <item>$ reviews</item>
-                            <item>$ review</item>
-                            <item>$ critiques</item>
-                            <item>$ critique</item>
-                            <item>$ old movies</item>
-                            <item>$ classic movies</item>
-                            <item>$ oldies</item>
-                            <item>$ classics</item>
-                            <item>$ trailers</item>
-                            <item>$ reviews</item>
+                            <item>$ 上映時間</item>
+                            <item>$ 劇場</item>
+                            <item>$ ファンダンゴ</item>
+                            <item>$ 試写</item>
+                            <item>$ レビュー</item>
+                            <item>$ 批評</item>
+                            <item>$ 評論</item>
+                            <item>$ 古い映画</item>
+                            <item>$ 古典映画</item>
+                            <item>$ オールディーズ</item>
+                            <item>$ クラシック</item>
+                            <item>$ 予告編</item>
+                            <item>$ レビュー</item>
                             <item>$ (DINING)={Topic}</item>
                             <item>$ (WEATHER)={Topic}</item>
                             <item>$ (TRAFFIC)={Topic}</item>
@@ -50,29 +50,29 @@
                     </input>
                     <input>
                         <grammar>
-                            <item>Preliminaries</item>
-                            <item>$ what do you know</item>
-                            <item>$ what can you do</item>
-                            <item>$ what can I do</item>
-                            <item>$ what can you tell</item>
-                            <item>$ what kind of</item>
-                            <item>$ what else do you know</item>
-                            <item>$ what do you have information</item>
-                            <item>$ do you know</item>
-                            <item>$ can you</item>
-                            <item>$ do you have information</item>
-                            <item>$ can I</item>
+                            <item>予備</item>
+                            <item>$ あなたは何を知っていますか</item>
+                            <item>$ あなたは何が出来ますか</item>
+                            <item>$ 私に何ができる</item>
+                            <item>$ あなたは何を伝えることができますか</item>
+                            <item>$ どんな</item>
+                            <item>$ あなたは他に何を知っていますか</item>
+                            <item>$ あなたの持っていない情報</item>
+                            <item>$ あなたは知っていますか</item>
+                            <item>$ あなたはできる</item>
+                            <item>$ あなたが情報を持っています</item>
+                            <item>$ 私はできます</item>
                         </grammar>
                         <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                         <goto ref="search_2414738"/>
                     </input>
                     <input>
                         <grammar>
-                            <item>Why do you need to know?</item>
-                            <item>$ why</item>
-                            <item>$ need to know</item>
-                            <item>$ use it</item>
-                            <item>$ do with it</item>
+                            <item>なぜ知る必要があるのですか。</item>
+                            <item>$ なぜ</item>
+                            <item>$ 知る必要がある</item>
+                            <item>$ これを使って</item>
+                            <item>$ それで行います</item>
                         </grammar>
                         <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                         <output>
@@ -84,25 +84,25 @@
                     </input>
                     <input>
                         <grammar>
-                            <item>I don't want to give it!</item>
-                            <item>$ don't want</item>
-                            <item>$ no</item>
-                            <item>$ refuse</item>
-                            <item>$ none of your business</item>
+                            <item>私は、それを与えたくありません！</item>
+                            <item>$ したくありません</item>
+                            <item>$ いいえ</item>
+                            <item>$ ごみ</item>
+                            <item>$ 大きなお世話</item>
                         </grammar>
                         <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                         <output>
                             <prompt selectionType="RANDOM">
-                                <item>That's fine.</item>
+                                <item>それで結構です。</item>
                             </prompt>
                             <goto ref="output_2508831"/>
                         </output>
                     </input>
                     <input id="input_2530402">
                         <grammar>
-                            <item>My name is</item>
-                            <item>my name is (DYNAMIC_DATA)={User_Name}</item>
-                            <item>mine is (DYNAMIC_DATA)={User_Name}</item>
+                            <item>私の名前は</item>
+                            <item>私の名前は (DYNAMIC_DATA)={User_Name}</item>
+                            <item>私は (DYNAMIC_DATA)={User_Name}</item>
                             <item>(DYNAMIC_DATA)={User_Name} </item>
                             <item>(DYNAMIC_DATA)={User_Name} GiveName</item>
                         </grammar>
@@ -110,7 +110,7 @@
                         <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                         <output>
                             <prompt>
-                                <item>Hi {User_Name}!</item>
+                                <item>こんにちは {User_Name}!</item>
                             </prompt>
                             <goto ref="output_2508831"/>
                         </output>
@@ -118,7 +118,7 @@
                 </getUserInput>
                 <output id="output_2508831">
                     <prompt selectionType="RANDOM">
-                        <item>Would you like to find a movie that's now playing or coming soon?</item>
+                        <item>現在上映されているか、すぐに上映される映画を見つけたいですか？</item>
                     </prompt>
                     <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                     <action varName="Class2" operator="SET_TO_BLANK"/>
@@ -128,8 +128,8 @@
             </output>
             <output id="output_2414737">
                 <prompt selectionType="RANDOM">
-                    <item>How can I help you?</item>
-                    <item>What can I do for you?</item>
+                    <item>どんな御用でしょうか？</item>
+                    <item>どういうご用件ですか？</item>
                 </prompt>
                 <getUserInput id="getUserInput_2414745">
                     <search id="search_2414738" ref="folder_2414695"/>
@@ -191,7 +191,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                                     <getUserInput>
                                     <input>
                                     <grammar>
-                                    <item>Yes</item>
+                                    <item>はい</item>
                                     </grammar>
                                     <output>
                                     <prompt/>
@@ -221,7 +221,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>No</item>
+                                    <item>いいえ</item>
                                     </grammar>
                                     <output>
                                     <prompt>
@@ -259,10 +259,10 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                         </if>
                         <output isInsertDNRStatement="true" id="output_2531608">
                             <prompt selectionType="SEQUENTIAL">
-                                <item>I'm not sure what you mean. Try &lt;i&gt;What's in theaters?&lt;/i&gt;
+                                <item>私はあなたが何を意味するかわかりません。Try &lt;i&gt;What's in theaters?&lt;/i&gt;
 </item>
-                                <item>I'm afraid I don't understand. I can't recognize movie titles at this time.</item>
-                                <item>I'm sorry, I don't understand. Try &lt;i&gt;What's playing?&lt;/i&gt;</item>
+                                <item>残念ですが、みつかりませんでした。下のアイコンを押して、もう一回試しましょう。</item>
+                                <item>ごめんなさい、私は理解できません。 Try &lt;i&gt;What's playing?&lt;/i&gt;</item>
                             </prompt>
                             <goto ref="##special_DNR_GET_USER_INPUT_NODE_ID"/>
                         </output>
@@ -272,10 +272,10 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
             <getUserInput id="getUserInput_2531765">
                 <input>
                     <grammar>
-                        <item>Okay</item>
-                        <item>haha</item>
-                        <item>sorry</item>
-                        <item>no problem</item>
+                        <item>OK</item>
+                        <item>ハハ</item>
+                        <item>ごめん</item>
+                        <item>問題ありません</item>
                     </grammar>
                     <goto ref="output_2449884"/>
                 </input>
@@ -286,7 +286,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
             <folder label="SYSTEM INITIATED SEQUENCES">
                 <output id="output_2449884">
                     <prompt selectionType="RANDOM">
-                        <item>Is there anything else I can help you with?</item>
+                        <item>私があなたのを手伝うことができるものが何かほかにありますか？</item>
                     </prompt>
                     <action varName="Page" operator="SET_TO">new</action>
                     <action varName="Current_Index" operator="SET_TO">0</action>
@@ -305,17 +305,17 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     <getUserInput>
                         <input>
                             <grammar>
-                                <item>Yes</item>
+                                <item>はい</item>
                             </grammar>
                             <goto ref="output_2414737"/>
                         </input>
                         <input>
                             <grammar>
-                                <item>No</item>
+                                <item>いいえ</item>
                             </grammar>
                             <output>
                                 <prompt selectionType="RANDOM">
-                                    <item>Okay.</item>
+                                    <item>OK</item>
                                 </prompt>
                                 <goto ref="output_2458386"/>
                             </output>
@@ -325,28 +325,28 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                 </output>
                 <output id="output_2458386">
                     <prompt selectionType="RANDOM">
-                        <item>Did you find what you were looking for, {User_Name}?</item>
+                        <item>探してるものを見つけましたか, {User_Name}?</item>
                     </prompt>
                     <getUserInput>
                         <input>
                             <grammar>
-                                <item>Yes</item>
+                                <item>はい</item>
                             </grammar>
                             <action varName="Request_Success" operator="SET_TO_YES"/>
                             <output>
                                 <prompt>
-                                    <item>Great!</item>
+                                    <item>すばらしい！</item>
                                 </prompt>
                                 <output id="output_2458390">
                                     <prompt selectionType="RANDOM">
-                                    <item>Goodbye.</item>
+                                    <item>さようなら</item>
                                     </prompt>
                                     <action varName="Terminal_Exchange" operator="SET_TO_YES"/>
                                     <action varName="Greeting_Count" operator="SET_TO">0</action>
                                     <getUserInput>
                                     <input>
                                     <grammar>
-                                    <item>Goodbye</item>
+                                    <item>バイバイ</item>
                                     <item>$ goodbye</item>
                                     </grammar>
                                     <output id="output_2510314">
@@ -370,34 +370,34 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                         </input>
                         <input>
                             <grammar>
-                                <item>No</item>
+                                <item>いいえ</item>
                             </grammar>
                             <action varName="Request_Success" operator="SET_TO_NO"/>
                             <output>
                                 <prompt>
-                                    <item>Oh no. Do you want to try again?</item>
+                                    <item>あらいやだ。もう一度試してみますか？</item>
                                 </prompt>
                                 <getUserInput>
                                     <input>
                                     <grammar>
-                                    <item>No</item>
+                                    <item>いいえ</item>
                                     </grammar>
                                     <action
                                     varName="Terminal_Exchange" operator="SET_TO_NO"/>
                                     <output>
                                     <prompt>
-                                    <item>Okay.</item>
+                                    <item>OK</item>
                                     </prompt>
                                     <goto ref="output_2458390"/>
                                     </output>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>Yes</item>
+                                    <item>はい</item>
                                     </grammar>
                                     <output>
                                     <prompt>
-                                    <item>Okay. What can I do for you?</item>
+                                    <item>OK。どんなご用でしょうか？</item>
                                     </prompt>
                                     <goto ref="getUserInput_2414745"/>
                                     </output>
@@ -410,29 +410,29 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                 </output>
                 <output id="output_2459375">
                     <prompt selectionType="RANDOM">
-                        <item>This is fun, but wouldn't you like to look up some movies?</item>
+                        <item>これは楽しみです。しかし、いくつかの映画を調べたくありませんか？</item>
                     </prompt>
                     <getUserInput id="getUserInput_2459376">
                         <input>
                             <grammar>
-                                <item>Yes</item>
+                                <item>はい</item>
                             </grammar>
                             <goto ref="output_2449874"/>
                         </input>
                         <input>
                             <grammar>
-                                <item>No</item>
+                                <item>いいえ</item>
                             </grammar>
                             <action varName="Small_Talk_Count" operator="SET_TO">0</action>
                             <output>
                                 <prompt selectionType="RANDOM">
-                                    <item>Okay, fine.</item>
+                                    <item>ＯＫ、すばらしい。</item>
                                 </prompt>
                             </output>
                         </input>
                         <input>
                             <grammar>
-                                <item>Okay</item>
+                                <item>ＯＫ</item>
                             </grammar>
                             <goto ref="output_2449874"/>
                         </input>
@@ -3111,9 +3111,9 @@ Say &lt;i&gt;got to go&lt;/i&gt; or &lt;i&gt;bye&lt;/i&gt; when you're finished.
                         </if>
                         <output>
                             <prompt selectionType="RANDOM">
-                                <item>Hello.</item>
-                                <item>Hi.</item>
-                                <item>Hi there.</item>
+                                <item>ハロー</item>
+                                <item>こんにちは</item>
+                                <item>やあ、こんにちは</item>
                             </prompt>
                             <output id="output_2459184">
                                 <prompt selectionType="RANDOM">
@@ -3406,76 +3406,76 @@ Say &lt;i&gt;got to go&lt;/i&gt; or &lt;i&gt;bye&lt;/i&gt; when you're finished.
             <folder label="Generic">
                 <concept>
                     <grammar>
-                        <item>okay</item>
-                        <item>ok</item>
-                        <item>thanks</item>
-                        <item>thank you</item>
-                        <item>ok thanks</item>
-                        <item>ok thank you</item>
-                        <item>okay thanks</item>
-                        <item>okay thank you</item>
-                        <item>great thanks</item>
-                        <item>great thank you</item>
-                        <item>all right</item>
-                        <item>alright</item>
-                        <item>great</item>
-                        <item>cool</item>
-                        <item>aww</item>
-                        <item>awww</item>
-                        <item>oh</item>
-                        <item>oh okay</item>
-                        <item>oh ok</item>
-                        <item>ah</item>
-                        <item>ah okay</item>
-                        <item>ah ok</item>
-                        <item>got it</item>
-                        <item>gotcha</item>
-                        <item>cheers</item>
-                        <item>ta</item>
+                        <item>オーケー</item>
+                        <item>オーケー</item>
+                        <item>感謝</item>
+                        <item>ありがとう</item>
+                        <item>オーケー感謝</item>
+                        <item>オーケーありがとう</item>
+                        <item>オーケー感謝</item>
+                        <item>オーケーありがとう</item>
+                        <item>まことにありがとうございます</item>
+                        <item>よかった。ありがとう</item>
+                        <item>わかった</item>
+                        <item>大丈夫</item>
+                        <item>すばらしいです</item>
+                        <item>クール</item>
+                        <item>あぁ！</item>
+                        <item>あぁ！</item>
+                        <item>オー</item>
+                        <item>おお、オーケー</item>
+                        <item>おお、ok </item>
+                        <item>ああ</item>
+                        <item>ああ、オーケー</item>
+                        <item>ああ、ok</item>
+                        <item>わかった</item>
+                        <item>分かりました！</item>
+                        <item>乾杯</item>
+                        <item>どうも</item>
                     </grammar>
                 </concept>
                 <concept>
                     <grammar>
-                        <item>Hello</item>
-                        <item>Hi</item>
-                        <item>Hola</item>
-                        <item>Howdy</item>
-                        <item>Hiya</item>
-                        <item>Hey</item>
+                        <item>ハロー</item>
+                        <item>こんにちは</item>
+                        <item>オーラ</item>
+                        <item>よう</item>
+                        <item>やあ</item>
+                        <item>ねえ</item>
                         <item>Heya</item>
                         <item>yello</item>
-                        <item>aloha</item>
-                        <item>hi there</item>
-                        <item>hey there</item>
-                        <item>Hello Watson</item>
-                        <item>Hi Watson</item>
-                        <item>Hola Watson</item>
-                        <item>Howdy Watson</item>
-                        <item>Hiya Watson</item>
-                        <item>Hey Watson</item>
+                        <item>アロハ</item>
+                        <item>やあ、どうも</item>
+                        <item>ねえ、どうも</item>
+                        <item>ハロー、ワトソン</item>
+                        <item>こんにちは、ワトソン</item>
+                        <item>オーラ、ワトソン</item>
+                        <item>よう、ワトソン</item>
+                        <item>やあ、ワトソン</item>
+                        <item>ねえ、ワトソン</item>
                         <item>Heya Watson</item>
                         <item>yello Watson</item>
-                        <item>aloha Watson</item>
-                        <item>hi there Watson</item>
-                        <item>hey there Watson</item>
+                        <item>アロハ、ワトソン</item>
+                        <item>やあ、どうもワトソン</item>
+                        <item>ねえ、どうもワトソン</item>
                     </grammar>
                 </concept>
                 <concept>
                     <grammar>
-                        <item>Goodbye</item>
-                        <item>bye bye</item>
-                        <item>bye now</item>
-                        <item>bye</item>
-                        <item>later</item>
-                        <item>laters</item>
-                        <item>see you later</item>
-                        <item>see you</item>
-                        <item>see ya later</item>
-                        <item>see ya</item>
-                        <item>cya</item>
-                        <item>au revoir</item>
-                        <item>good night</item>
-                        <item>good day</item>
+                        <item>さようなら</item>
+                        <item>バイバイ</item>
+                        <item>じゃあね</item>
+                        <item>さよなら</item>
+                        <item>後で</item>
+                        <item>バイバイ</item>
+                        <item>また後で</item>
+                        <item>またね</item>
+                        <item>じゃあまたね</item>
+                        <item>じゃあね</item>
+                        <item>じゃあまたね</item>
+                        <item>さよなら</item>
+                        <item>おやすみ</item>
+                        <item>良い一日を</item>
                     </grammar>
                 </concept>
                 <concept>
