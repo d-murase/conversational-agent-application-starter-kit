@@ -1,224 +1,224 @@
-マッドマックスはどのように評価されている？,OtherClass
-映画監督を探して,LookupDirectors
-ホビットの冒険は誰が主演だった？,LookupActors
-ドラマ,SearchMovies
-私は最近のドラマを見てみたい,SearchMovies
-どんな上映中があるか見せて,SearchMovies
-セクシーな何か,SearchMovies
-良い一日,ClosingTalk
-こんにちは,OpeningTalk
-私は最近の喜劇を見てみたい,SearchMovies
-何を上映してる？,SearchMovies
-R指定,SearchMovies
-Vacationの製作者は誰ですか？,LookupDirectors
-いま、何を上映していますか。,SearchMovies
-助けてください,RepairTalk
-気にするなよ,RepairTalk
-現在のすべての評価の映画,SearchMovies
-r指定,SearchMovies
-喜劇,SearchMovies
+Mad Max how are the ratings?,OtherClass
+look for movie directors,LookupDirectors
+who starred in The Hobbit,LookupActors
+drama,SearchMovies
+I'd like to see a recent drama,SearchMovies
+show me whats playing,SearchMovies
+something sexy,SearchMovies
+good day,ClosingTalk
+hi,OpeningTalk
+I'd like to see a recent comedy,SearchMovies
+whats playing,SearchMovies
+R,SearchMovies
+who is the producer of Vacation?,LookupDirectors
+What current movies are playing?,SearchMovies
+help,RepairTalk
+nvm,RepairTalk
+all current any rating movies,SearchMovies
+r,SearchMovies
+comedy,SearchMovies
 Ajay,GiveName
-私は映画スターを見てみたい,LookupActors
-私に映画を見せて,SearchMovies
-現在どのような映画を上映していますか？,SearchMovies
-これからの,SearchMovies
-Pixelsはアクションですか？、コメディですか？,OtherClass
-最近のコメディを見たいです,SearchMovies
-急ぐ必要がある,ClosingTalk
-ホラー,SearchMovies
-ごめん,SmallTalk
-ビバリー,GiveName
-火星の人,OtherClass
-何を上映してる？,SearchMovies
-コメディー,SearchMovies
+I want to look up movie stars,LookupActors
+show me movies,SearchMovies
+What current movies are playing?,SearchMovies
+upcoming,SearchMovies
+Is Pixels an action or comedy?,OtherClass
+I'd like to see a recent comedy,SearchMovies
+need to run,ClosingTalk
+Horror,SearchMovies
+Sorry,SmallTalk
+Beverley,GiveName
+The Martian,OtherClass
+what's playing,SearchMovies
+comedy,SearchMovies
 asdf,OtherClass
-何を上映してる？,SearchMovies
+whats playing,SearchMovies
 What actors are in Sound Mixers?,LookupActors
 what were those again?,RepairTalk
-何を上映してる？,SearchMovies
-ワトソン、何を上映してるの？,SearchMovies
-こんにちは,OpeningTalk
-これから上映される映画,SearchMovies
-アクション,SearchMovies
-英語を理解します,SmallTalk
-この天気はどう？,SmallTalk
-映画を探して,SearchMovies
-r指定,SearchMovies
-何を上映してる？,SearchMovies
-ホラー,SearchMovies
-こんにちは,OpeningTalk
-アクション,SearchMovies
-いまどんな映画を上映しているの？,SearchMovies
-もっと映画を見せて,OtherClass
-バイバイ,ClosingTalk
-アクション,SearchMovies
-リチャード,GiveName
-いいえ、私はコメディを意味します,RepairTalk
-PG指定,SearchMovies
-現在の,SearchMovies
-私は、映画の上映時間を知りたい,CheckShowtimes
-99 homes はR指定？,OtherClass
-私は最近の喜劇を見てみたい,SearchMovies
-エリック,GiveName
-どんな上映中があるか見せて,SearchMovies
-2001年宇宙のたびに関すること,SmallTalk
-いまどんな映画を上映しているの？,SearchMovies
-PG指定,SearchMovies
-ログオフ,ClosingTalk
-というのは,RepairTalk
-ドラマ,SearchMovies
-ピッチパーフェクト2はどの劇場で上映してる,CheckShowtimes
-より良いものを提案してください,OtherClass
-もうすぐ公開される映画は、何ですか？,SearchMovies
-去らなければならない,ClosingTalk
-どんな映画について、あなたは知っていますか,PreSequence
-それは、私が意味するものでありません,RepairTalk
-いまどんな映画を上映しているの？,SearchMovies
-アクション,SearchMovies
-私の心は、映画を見つけて変化する,OtherClass
-それは、何を表しますか,RepairTalk
-私が意味するのは,RepairTalk
-どんな映画が、やっていますか,SearchMovies
-こんにちは,OpeningTalk
-映画の評価はどのような種類がありますか？,SearchMovies
-私は行きます,ClosingTalk
-現在,SearchMovies
-アクション映画,SearchMovies
-NC-17指定,SearchMovies
-G指定,SearchMovies
-もっと見せて,SearchMovies
-もっと他の映画を見せて,SearchMovies
-PG指定に変更,RepairTalk
-アクション,SearchMovies
-PG指定,SearchMovies
-今どんな映画が上映されていますか？,SearchMovies
+whats playing,SearchMovies
+whats playing watson?,SearchMovies
+hi,OpeningTalk
+upcoming movies,SearchMovies
+action,SearchMovies
+understand English,SmallTalk
+how about this weather,SmallTalk
+look up a movie,SearchMovies
+r,SearchMovies
+whats playing??,SearchMovies
+horror,SearchMovies
+hi,OpeningTalk
+action,SearchMovies
+What current movies are playing?,SearchMovies
+show more movies,OtherClass
+toodles,ClosingTalk
+action,SearchMovies
+Richard,GiveName
+no i mean comedy,RepairTalk
+PG,SearchMovies
+current,SearchMovies
+i want to look up movie times,CheckShowtimes
+is 99 homes rated r?,OtherClass
+I'd like to see a recent comedy,SearchMovies
+Eric,GiveName
+show me whats playing,SearchMovies
+what is 2001 about,SmallTalk
+What current movies are playing?,SearchMovies
+PG,SearchMovies
+logging off,ClosingTalk
+I mean,RepairTalk
+drama,SearchMovies
+Which theatres are playing Pitch Perfect 2,CheckShowtimes
+suggest better one,OtherClass
+what are the upcoming movies?,SearchMovies
+have to leave,ClosingTalk
+what movies do you know about,PreSequence
+that's not what I mean,RepairTalk
+What current movies are playing?,SearchMovies
+action,SearchMovies
+changed my mind find the fil,OtherClass
+what does that stand for,RepairTalk
+I meant,RepairTalk
+What movies are out now,SearchMovies
+hi,OpeningTalk
+What types of movie rating are there?,SearchMovies
+I'm leaving,ClosingTalk
+current,SearchMovies
+action movie,SearchMovies
+NC-17,SearchMovies
+G,SearchMovies
+show me more,SearchMovies
+show me other movie,SearchMovies
+change to pG,RepairTalk
+Action,SearchMovies
+PG,SearchMovies
+What current movies are playing?,SearchMovies
 varada,GiveName
-いいえ、すべてのアクション映画とを意味します,RepairTalk
-近くで,CheckShowtimes
-2001年宇宙のたびの筋,SmallTalk
-ファミリー,SearchMovies
-遅れて,ClosingTalk
-挨拶,OpeningTalk
-サウンドミキサーと何のことですか？,OtherClass
-現在,SearchMovies
-ジョニー・デップの主演映画,LookupActors
-ドラマ,SearchMovies
-PG-13指定,SearchMovies
-それらは何ですか,RepairTalk
-最近のPG指定のコメディを見たいです,SearchMovies
-ミッションインポッシブルのスターは誰ですか,LookupActors
+no i mean to say all action movies,RepairTalk
+Near me,CheckShowtimes
+what's the plot of 2001,SmallTalk
+family,SearchMovies
+out of time,ClosingTalk
+greetings,OpeningTalk
+What is sound mixers about?,OtherClass
+current,SearchMovies
+movies starring Johnny Depp,LookupActors
+drama,SearchMovies
+pg-13,SearchMovies
+what are those,RepairTalk
+I'd like to see a recent pg comedy,SearchMovies
+who stars in mission impossible,LookupActors
 nvm,RepairTalk
-あなたは私に現在上映中のPG13指定のコメディ映画を一覧表示することができますか？,SearchMovies
-こんにちは,OpeningTalk
-やり直してください,RepairTalk
-ドラマ,SearchMovies
-やあ、あなたは新しいウディ・アレンについて何を聞きましたか？,LookupDirectors
-どういう意味,RepairTalk
-またね,ClosingTalk
-いい映画を探して,SearchMovies
-近日公開,SearchMovies
-ここの上映時間はわかる？,CheckShowtimes
-昨日の夜試合見た？,SmallTalk
-最近の映画を見たいです,SearchMovies
-アクション,SearchMovies
-映画館で何がやってる？,SearchMovies
-最近のコメディを見たいです,SearchMovies
-Furious 7はどこで観られる？,CheckShowtimes
-これからのホラー,SearchMovies
+Can you list me the current PG13-rated Comedy movies?,SearchMovies
+hi,OpeningTalk
+start over,RepairTalk
+drama,SearchMovies
+Hi what did you hear about the new Woody Allen?,LookupDirectors
+what do you mean by,RepairTalk
+cya,ClosingTalk
+search for a good movie,SearchMovies
+coming soon,SearchMovies
+where are the showtimes?,CheckShowtimes
+did you catch the game last night,SmallTalk
+I'd like to see a recent movie,SearchMovies
+action,SearchMovies
+what's playing at cinemas,SearchMovies
+I'd like to see a recent comedy,SearchMovies
+where is Furious 7 showing,CheckShowtimes
+upcoming horror,SearchMovies
 is it freezing where you are,SmallTalk
-私は現在のアクション映画のことを知りたい。,SearchMovies
-ジョージ,GiveName
-今日の仕事の後に観る事の出来る映画,SearchMovies
-どこでアベンジャーズを観られますか？,CheckShowtimes
-これから公開される映画を教えて,SearchMovies
-あなた映画を知っている,PreSequence
-NC-17指定,SearchMovies
-すでにあなたに言いました,RepairTalk
-現在,SearchMovies
-ドラマ,SearchMovies
-PG指定を見せて,SearchMovies
-こんにちは,OpeningTalk
-ワトソン何してる？,SearchMovies
+I would like to know about current action movies,SearchMovies
+George,GiveName
+a movie i could watch after work today,SearchMovies
+where can I see avengers,CheckShowtimes
+show me upcoming movies,SearchMovies
+do you know about movies,PreSequence
+NC-17,SearchMovies
+already told you,RepairTalk
+current,SearchMovies
+drama,SearchMovies
+show me pg,SearchMovies
+hi,OpeningTalk
+whats playing watson?,SearchMovies
 sdf,OtherClass
-何をやってるの？,SearchMovies
-今後,SearchMovies
-コメディ,SearchMovies
-もちろん高い,OtherClass
-リーサ,GiveName
-アロハ,OpeningTalk
+What's playing?,SearchMovies
+upcoming,SearchMovies
+comedy,SearchMovies
+high of course,OtherClass
+Lesa,GiveName
+aloha,OpeningTalk
 what were those again,RepairTalk
-今後の,SearchMovies
-現在の,SearchMovies
-こんにちは,OpeningTalk
-現在どのような映画を上映していますか？,SearchMovies
-何をしたいですか,SmallTalk
+upcoming,SearchMovies
+current,SearchMovies
+hi,OpeningTalk
+What current movies are playing?,SearchMovies
+what do you like to do,SmallTalk
 romcom,SearchMovies
-ヨー,OpeningTalk
-R指定,SearchMovies
-ダンと呼んで,GiveName
-私は監督を探してます,LookupDirectors
+yo,OpeningTalk
+R,SearchMovies
+i'm called Dan,GiveName
+I wanna to find a director,LookupDirectors
 Pitch Perfect 2,OtherClass
-R指定,SearchMovies
-こんにちは,OpeningTalk
-シャン,GiveName
-ジュラシックパーク,OtherClass
-ロマンス,SearchMovies
-アクション,SearchMovies
-何がやってる？,SearchMovies
-こんにちは,OpeningTalk
-上映時間,CheckShowtimes
-あなたはどこで働いてますか,SmallTalk
-今後のホラー映画を見せて,SearchMovies
-現在どのような映画を上映していますか？,SearchMovies
-英語を知ってる？,SmallTalk
-何がやってる？,SearchMovies
-R指定,SearchMovies
-私の名前はラルフ,GiveName
+R,SearchMovies
+hi,OpeningTalk
+Shan,GiveName
+Jurrassic Park,OtherClass
+Romance,SearchMovies
+action,SearchMovies
+whats playing?,SearchMovies
+hi,OpeningTalk
+show times,CheckShowtimes
+where do you work,SmallTalk
+Show me upcoming horror,SearchMovies
+What current movies are playing?,SearchMovies
+do you know English,SmallTalk
+whats playing,SearchMovies
+R-rated,SearchMovies
+my name is Ralph,GiveName
 tips,RepairTalk
-これからの映画,SearchMovies
-後で,ClosingTalk
-メイズランナーの監督は誰？,LookupDirectors
-R指定,SearchMovies
-気にするなよ,RepairTalk
-コメディ,SearchMovies
-デザレイ,GiveName
-最近のドラマを見たいです,SearchMovies
-何が上映されているか教えて,SearchMovies
-最近の喜劇が見たい,SearchMovies
-どういう意味ですか,RepairTalk
-はい、お願いします！  今ちょうど外出しますが、どんなコメディがありますか？,SearchMovies
-ボンジュール,OpeningTalk
-こんにちは,OpeningTalk
-何が上映されてる？,SearchMovies
-テッド２,OtherClass
-ロマンチックコメディ,SearchMovies
-何が上映されているか教えて,SearchMovies
-あなたは天気について知っていますか,PreSequence
-現在,SearchMovies
-あなたは車について教えることができますか？,PreSequence
-後で,ClosingTalk
-上映時間,CheckShowtimes
-どんな大スターがアンとマンに出てますか？,LookupActors
-こんにちは,OpeningTalk
-教えることができますか,PreSequence
-コメディ,SearchMovies
-コメディ映画を教えてください,SearchMovies
-何が上映されているか教えてください,SearchMovies
-PG指定,SearchMovies
-5つ星評価の映画,OtherClass
-どこでマッドマックスを見ることができますか？,CheckShowtimes
-R指定,SearchMovies
-感じのいい映画,SearchMovies
-どんな映画が、現在上映されていますか？,SearchMovies
-R指定,SearchMovies
-コメディ,SearchMovies
-また今度,SearchMovies
-理解できません,RepairTalk
-スタンリー・キューブリック監督の映画,LookupDirectors
-現在どのような映画を上映していますか？,SearchMovies
-それは私の意図ではありません,RepairTalk
-さようなら,ClosingTalk
-それは、私が意図しているものではない,RepairTalk
+Upcoming movies,SearchMovies
+later,ClosingTalk
+who directed Maze Runner,LookupDirectors
+r,SearchMovies
+nvm,RepairTalk
+comedy,SearchMovies
+Desiree,GiveName
+I'd like to see a recent drama,SearchMovies
+Show me whats playing,SearchMovies
+I'd like to see a recent comedy,SearchMovies
+what does that mean,RepairTalk
+Yes please!  Are there any comedies out right now?,SearchMovies
+bonjour,OpeningTalk
+hi,OpeningTalk
+what's playing,SearchMovies
+ted2,OtherClass
+Romantic comedy,SearchMovies
+Show me whats playing,SearchMovies
+DO YOU KNOW ABOUT WEATHER,PreSequence
+current,SearchMovies
+can you tell me about cars,PreSequence
+later,ClosingTalk
+movie times,CheckShowtimes
+which superstar is in ant-man?,LookupActors
+yello,OpeningTalk
+what can you tell me,PreSequence
+Comedy,SearchMovies
+show me comedy movies,SearchMovies
+show me whats playing,SearchMovies
+pg,SearchMovies
+movie rating of 5 stars,OtherClass
+Where can I watch Mad Max?,CheckShowtimes
+R,SearchMovies
+feel good movies,SearchMovies
+what movies are playing now?,SearchMovies
+r,SearchMovies
+comedy,SearchMovies
+Another time,SearchMovies
+I don't get it,RepairTalk
+movies directed by Stanley Kubrick,LookupDirectors
+What current movies are playing?,SearchMovies
+that's not what I meant,RepairTalk
+good bye,ClosingTalk
+that's not what I mean,RepairTalk
 PG-11,SearchMovies
 what does that mean,RepairTalk
 drama,SearchMovies
