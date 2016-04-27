@@ -179,46 +179,46 @@ tips,RepairTalk
 後で,ClosingTalk
 メイズランナーの監督は誰？,LookupDirectors
 R指定,SearchMovies
-nvm,RepairTalk
+気にするなよ,RepairTalk
 コメディ,SearchMovies
 デザレイ,GiveName
-I'd like to see a recent drama,SearchMovies
-Show me whats playing,SearchMovies
-I'd like to see a recent comedy,SearchMovies
-what does that mean,RepairTalk
-Yes please!  Are there any comedies out right now?,SearchMovies
+最近のドラマを見たいです,SearchMovies
+何が上映されているか教えて,SearchMovies
+最近の喜劇が見たい,SearchMovies
+どういう意味ですか,RepairTalk
+はい、お願いします！  今ちょうど外出しますが、どんなコメディがありますか？,SearchMovies
 ボンジュール,OpeningTalk
-hi,OpeningTalk
-what's playing,SearchMovies
-ted2,OtherClass
-Romantic comedy,SearchMovies
-Show me whats playing,SearchMovies
-DO YOU KNOW ABOUT WEATHER,PreSequence
-current,SearchMovies
-can you tell me about cars,PreSequence
-later,ClosingTalk
-movie times,CheckShowtimes
-which superstar is in ant-man?,LookupActors
-yello,OpeningTalk
-what can you tell me,PreSequence
-Comedy,SearchMovies
-show me comedy movies,SearchMovies
-show me whats playing,SearchMovies
-pg,SearchMovies
-movie rating of 5 stars,OtherClass
-Where can I watch Mad Max?,CheckShowtimes
-R,SearchMovies
-feel good movies,SearchMovies
-what movies are playing now?,SearchMovies
-r,SearchMovies
-comedy,SearchMovies
-Another time,SearchMovies
-I don't get it,RepairTalk
-movies directed by Stanley Kubrick,LookupDirectors
-What current movies are playing?,SearchMovies
-that's not what I meant,RepairTalk
-good bye,ClosingTalk
-that's not what I mean,RepairTalk
+こんにちは,OpeningTalk
+何が上映されてる？,SearchMovies
+テッド２,OtherClass
+ロマンチックコメディ,SearchMovies
+何が上映されているか教えて,SearchMovies
+あなたは天気について知っていますか,PreSequence
+現在,SearchMovies
+あなたは車について教えることができますか？,PreSequence
+後で,ClosingTalk
+上映時間,CheckShowtimes
+どんな大スターがアンとマンに出てますか？,LookupActors
+こんにちは,OpeningTalk
+教えることができますか,PreSequence
+コメディ,SearchMovies
+コメディ映画を教えてください,SearchMovies
+何が上映されているか教えてください,SearchMovies
+PG指定,SearchMovies
+5つ星評価の映画,OtherClass
+どこでマッドマックスを見ることができますか？,CheckShowtimes
+R指定,SearchMovies
+感じのいい映画,SearchMovies
+どんな映画が、現在上映されていますか？,SearchMovies
+R指定,SearchMovies
+コメディ,SearchMovies
+また今度,SearchMovies
+理解できません,RepairTalk
+スタンリー・キューブリック監督の映画,LookupDirectors
+現在どのような映画を上映していますか？,SearchMovies
+それは私の意図ではありません,RepairTalk
+さようなら,ClosingTalk
+それは、私が意図しているものではない,RepairTalk
 PG-11,SearchMovies
 what does that mean,RepairTalk
 drama,SearchMovies

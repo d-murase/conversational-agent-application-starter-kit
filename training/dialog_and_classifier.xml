@@ -225,7 +225,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                                     </grammar>
                                     <output>
                                     <prompt>
-                                    <item>Please rephrase your request.</item>
+                                    <item>リクエストを言い換えてください</item>
                                     </prompt>
                                     <action
                                     varName="Defaulted_Previous" operator="SET_TO_NO"/>
@@ -356,7 +356,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                                     <getUserInput>
                                     <output id="output_2458394">
                                     <prompt>
-                                    <item>Welcome back!</item>
+                                    <item>お帰りなさい！</item>
                                     </prompt>
                                     <goto ref="output_2414737"/>
                                     </output>
@@ -444,16 +444,16 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                 <action varName="Greeting_Count" operator="SET_TO">0</action>
                 <action varName="Small_Talk_Count" operator="SET_TO">0</action>
                 <input isAutoLearnCandidate="true"
-                    isRelatedNodeCandidate="true" comment="$ do you know&#xa;$ can you&#xa;$ do you have information&#xa;$ can I&#xa;$ can you tell&#xa;$ what kind of&#xa;$ what else do you know&#xa;$ do you have">
+                    isRelatedNodeCandidate="true" comment="$ あなたは知っていますか&#xa;$ あなたはできる&#xa;$ あなたが情報を持っています&#xa;$ 私はできます&#xa;$ 教えてくれますか&#xa;$ どんな&#xa;$ あなたは他に何を知っていますか&#xa;$ ありますか">
                     <grammar>
                         <item>PreSequence</item>
-                        <item>what can you do</item>
-                        <item>what do you know</item>
-                        <item>do you know about *</item>
-                        <item>can you look up *</item>
-                        <item>can I look up *</item>
-                        <item>what genres *</item>
-                        <item>which genres *</item>
+                        <item>あなたは何を行うことができます</item>
+                        <item>あなたは何を知っていますか</item>
+                        <item>あなたが知っていますか *</item>
+                        <item>あなたが調べることができます *</item>
+                        <item>私は調べることができます *</item>
+                        <item>何のジャンル *</item>
+                        <item>どのジャンル *</item>
                         <item>* PreSequence</item>
                     </grammar>
                     <action varName="Greeting_Count" operator="SET_TO">0</action>
@@ -461,38 +461,38 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                     <input>
                         <grammar>
-                            <item>what genres do you know</item>
-                            <item>what genres *</item>
-                            <item>which genres *</item>
-                            <item>what are the genres *</item>
+                            <item>あなたは何のジャンルを知っていますか</item>
+                            <item>何のジャンル *</item>
+                            <item>どのジャンル *</item>
+                            <item>ジャンルは何ですか *</item>
                         </grammar>
                         <output>
                             <prompt selectionType="RANDOM">
-                                <item>Action, adventure, animated, comedy, crime, documentary, drama, family, fantasy, foreign, historical, horror, music, mystery, romance, science fiction, TV movie, thriller, war movies and western.</item>
+                                <item>アクション, 冒険, アニメ, 喜劇, 犯罪, ドキュメンタリー, ドラマ, ファイミリー, ファンタジー, 外国, 史実, ホラー, 音楽, ミステリー, ロマンス, ＳＦ, テレビ映画, スリラー, 戦争映画と西部劇</item>
                             </prompt>
                             <goto ref="getUserInput_2531765"/>
                         </output>
                     </input>
                     <input>
                         <grammar>
-                            <item>unsupported actions</item>
+                            <item>サポートされていないアクション</item>
                             <item>$ (UNSUPPORTED_ACTIONS)={Topic}</item>
                         </grammar>
                         <action varName="Topic" operator="SET_TO">{Topic.value:name}</action>
                         <input>
                             <grammar>
-                                <item>what</item>
-                                <item>$ what</item>
+                                <item>何</item>
+                                <item>$ 何</item>
                             </grammar>
                             <goto ref="output_2531859"/>
                         </input>
                         <output>
                             <prompt>
-                                <item>No.</item>
+                                <item>いいえ</item>
                             </prompt>
                             <output id="output_2531859">
                                 <prompt selectionType="RANDOM">
-                                    <item>I'm afraid I can't {Topic}.</item>
+                                    <item>あいにく、私にはできません {Topic}.</item>
                                 </prompt>
                                 <goto ref="getUserInput_2531765"/>
                             </output>
@@ -500,24 +500,24 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     </input>
                     <input>
                         <grammar>
-                            <item>supported actions</item>
+                            <item>サポートされるアクション</item>
                             <item>$ (SUPPORTED_ACTIONS)={Topic}</item>
                         </grammar>
                         <action varName="Topic" operator="SET_TO">{Topic.value:name}</action>
                         <input>
                             <grammar>
-                                <item>what</item>
-                                <item>$ what</item>
+                                <item>何</item>
+                                <item>$ 何</item>
                             </grammar>
                             <goto ref="output_2531866"/>
                         </input>
                         <output>
                             <prompt>
-                                <item>Yes.</item>
+                                <item>はい</item>
                             </prompt>
                             <output id="output_2531866">
                                 <prompt selectionType="RANDOM">
-                                    <item>I can {Topic}. </item>
+                                    <item>できます {Topic}. </item>
                                 </prompt>
                                 <goto ref="getUserInput_2531765"/>
                             </output>
@@ -525,24 +525,24 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     </input>
                     <input>
                         <grammar>
-                            <item>unsupported genres</item>
+                            <item>サポートされていないジャンル</item>
                             <item>$ (UNSUPPORTED_GENRES)={Topic}</item>
                         </grammar>
                         <action varName="Topic" operator="SET_TO">{Topic.value:main}</action>
                         <input>
                             <grammar>
-                                <item>what</item>
-                                <item>$ what</item>
+                                <item>何</item>
+                                <item>$ 何</item>
                             </grammar>
                             <goto ref="output_2510164"/>
                         </input>
                         <output>
                             <prompt selectionType="RANDOM">
-                                <item>No.</item>
+                                <item>いいえ</item>
                             </prompt>
                             <output id="output_2510164">
                                 <prompt selectionType="RANDOM">
-                                    <item>I'm afraid {Topic} isn't a movie genre I know. Please try another one.</item>
+                                    <item>あいにく {Topic} 私が知っている映画のジャンルではありません。別のものを試みてください。</item>
                                 </prompt>
                                 <goto ref="getUserInput_2531765"/>
                             </output>
@@ -550,7 +550,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     </input>
                     <input>
                         <grammar>
-                            <item>Genres</item>
+                            <item>ジャンル</item>
                             <item>$ (GENRE)={Genre_Preference}</item>
                         </grammar>
                         <action varName="Genre_Preference" operator="SET_TO">{Genre_Preference.value:main}</action>
@@ -569,30 +569,30 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                             <cond varName="Out-of-Scope_Count" operator="GREATER_THEN">2</cond>
                             <output>
                                 <prompt selectionType="RANDOM">
-                                    <item>I'm sorry I don't know about that. Can I look up some movies for you?</item>
+                                    <item>私はそれについて知らないごめんなさい。あなたのためのいくつかの映画を調べてもよいですか？</item>
                                 </prompt>
                                 <getUserInput>
                                     <input>
                                     <grammar>
-                                    <item>Yes</item>
+                                    <item>はい</item>
                                     </grammar>
                                     <goto ref="output_2449874"/>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>No</item>
+                                    <item>いいえ</item>
                                     </grammar>
                                     <action
                                     varName="Out-of-Scope_Count" operator="SET_TO">0</action>
                                     <output>
                                     <prompt>
-                                    <item>Okay, fine.</item>
+                                    <item>じゃ、いいよ。</item>
                                     </prompt>
                                     </output>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>Okay</item>
+                                    <item>OK</item>
                                     </grammar>
                                     <goto ref="output_2449874"/>
                                     </input>
@@ -602,18 +602,18 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                         </if>
                         <input>
                             <grammar>
-                                <item>what</item>
-                                <item>$ what</item>
+                                <item>何</item>
+                                <item>$ 何</item>
                             </grammar>
                             <goto ref="output_2497989"/>
                         </input>
                         <output>
                             <prompt>
-                                <item>No.</item>
+                                <item>いいえ</item>
                             </prompt>
                             <output id="output_2497989">
                                 <prompt selectionType="RANDOM">
-                                    <item>I'm afraid I don't know much about {Topic}. Just movies.</item>
+                                    <item>あいにく {Topic} については知りません。映画についてだけです。</item>
                                 </prompt>
                                 <goto ref="getUserInput_2531765"/>
                             </output>
@@ -621,7 +621,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     </input>
                     <output>
                         <prompt selectionType="RANDOM">
-                            <item>I can look up current and upcoming movies by Genre or MPAA Rating and show you trailers for them. But I'm afraid I cannot search by number of stars or by movie titles or actor and director names at this time.</item>
+                            <item>私はジャンルかMPAAの評価によって現在とこれからの映画を調べて、それらのトレーラーに示すことができます。しかし、星の数あるいは映画タイトルあるいは俳優と監督の名によって探索することができないと心配します。</item>
                         </prompt>
                         <goto ref="getUserInput_2531765"/>
                     </output>
@@ -671,7 +671,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                     <output>
                         <prompt selectionType="RANDOM">
-                            <item>Wouldn't you rather find a movie?</item>
+                            <item>むしろ映画を見つけるだろうか？</item>
                         </prompt>
                         <goto ref="getUserInput_2459376"/>
                     </output>
@@ -684,7 +684,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                     <output>
                         <prompt selectionType="RANDOM">
-                            <item>This must be frustrating.</item>
+                            <item>これは苛立たしいに違いありません。</item>
                         </prompt>
                         <goto ref="getUserInput_2459376"/>
                     </output>
@@ -697,15 +697,15 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                     <output>
                         <prompt selectionType="RANDOM">
-                            <item>Hmmm.</item>
+                            <item>うーん。</item>
                         </prompt>
                         <goto ref="output_2531608"/>
                     </output>
                 </input>
                 <input>
                     <grammar>
-                        <item>Misclassified Utterances</item>
-                        <item>thanks</item>
+                        <item>誤って分類された発言</item>
+                        <item>ありがとう</item>
                     </grammar>
                     <goto ref="output_2531608"/>
                 </input>
@@ -714,27 +714,27 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                 <action varName="Small_Talk_Count" operator="SET_TO">0</action>
                 <action varName="Greeting_Count" operator="SET_TO">0</action>
                 <input isAutoLearnCandidate="true"
-                    isRelatedNodeCandidate="true" comment="LookupActors *&#xa;I want to search for actors&#xa;I want to find movie actors&#xa;search movies by actor&#xa;i'm interested in actors&#xa;search for cast members&#xa;$ look up actors&#xa;$ look up an actor&#xa;$ lookup actors&#xa;$ lookup actor&#xa;$ search for actors&#xa;$ search by actor&#xa;$ find actors&#xa;$ find an actor&#xa;$ looking for an actor&#xa;$ interested in actors&#xa;$ look up cast&#xa;$ look up cast members&#xa;$ serach for cast&#xa;$ search for cast members&#xa;$ find cast&#xa;$ find cast members">
+                    isRelatedNodeCandidate="true" comment="LookupActors *&#xa;私は俳優を検索したい&#xa;私は映画俳優を見つけたい&#xa;俳優によって映画を探索します。&#xa;私は、俳優に興味を持っています&#xa;キャスト・メンバーを探索します。&#xa;$ 俳優を検索&#xa;$ 俳優を探しなさい&#xa;$ 俳優検査&#xa;$ 検査俳優&#xa;$ 俳優を捜してください&#xa;$ 俳優で検索&#xa;$ 俳優を見つけてください&#xa;$ 俳優を見つけなさい&#xa;$ 俳優を探して&#xa;$ 俳優に興味があります&#xa;$ キャストを探しなさい&#xa;$ キャストメンバーを検索&#xa;$ キャストを検索&#xa;$ キャストメンバーの検索&#xa;$ キャストを見つけてください&#xa;$ キャストメンバーを見つけてください">
                     <grammar>
                         <item>LookupActors</item>
-                        <item>I want to look up actors</item>
-                        <item>look up actors</item>
+                        <item>私は俳優を探したい</item>
+                        <item>俳優を探しなさい</item>
                         <item>* LookupActors</item>
                     </grammar>
                     <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                     <output>
                         <prompt selectionType="RANDOM">
-                            <item>I'm afraid I can't look up cast members.</item>
+                            <item>残念ながら、私はキャスト・メンバーを調べることができません。</item>
                         </prompt>
                         <goto ref="getUserInput_2531765"/>
                     </output>
                 </input>
                 <input isAutoLearnCandidate="true"
-                    isRelatedNodeCandidate="true" comment="LookupDirectors *&#xa;I want to search for directors&#xa;search for directors&#xa;I'm interested in directors&#xa;I want to find a director&#xa;search movies by director&#xa;$ look up directors&#xa;$ look up director&#xa;$ lookup directors&#xa;$ lookup director&#xa;$ search for directors&#xa;$ search by director&#xa;$ find directors&#xa;$ find a director&#xa;$ looking for a director&#xa;$ interested in directors">
+                    isRelatedNodeCandidate="true" comment="LookupDirectors *&#xa;私は監督を捜したい。&#xa;監督を捜します。&#xa;私は監督に興味を持っています&#xa;私は監督を見つけたい&#xa;search movies by director&#xa;$ look up directors&#xa;$ look up director&#xa;$ lookup directors&#xa;$ lookup director&#xa;$ search for directors&#xa;$ search by director&#xa;$ find directors&#xa;$ find a director&#xa;$ looking for a director&#xa;$ interested in directors">
                     <grammar>
                         <item>LookupDirectors</item>
-                        <item>I want to look up directors</item>
-                        <item>look up directors</item>
+                        <item>私は監督を探したい</item>
+                        <item>監督を探しなさい</item>
                         <item>* LookupDirectors</item>
                     </grammar>
                     <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
@@ -746,11 +746,11 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     </output>
                 </input>
                 <input isAutoLearnCandidate="true"
-                    isRelatedNodeCandidate="true" comment="CheckShowtimes *&#xa;I want to find movies near me&#xa;I want to look up showtimes&#xa;search for showtimes&#xa;find movie times&#xa;find movies in my area&#xa;look up showtimes&#xa;$ movies near me&#xa;$ movies by me&#xa;$ in my area&#xa;$ what theaters&#xa;$ where is * playing&#xa;$ where is * showing&#xa;$ search for showtimes&#xa;$ look up showtimes&#xa;$ look for showtimes&#xa;$ I want to find showtimes&#xa;$ find out showtimes&#xa;$ find movie times&#xa;$ search for movie times&#xa;$ look up movie times&#xa;$ look for movie times&#xa;$ I want to find movie times&#xa;$ find out movie times&#xa;$ find movie times&#xa;$ when it is playing&#xa;$ when it is showing&#xa;$ what time it is playing&#xa;$ what time it is showing">
+                    isRelatedNodeCandidate="true" comment="CheckShowtimes *&#xa;私の近くで映画を見つけたいです&#xa;私は上映時間を調べたい&#xa;上映時間を検索&#xa;映画の上映時間を見つけます&#xa;私の地域で映画を見つけます&#xa;上映時間を調べます&#xa;$ 私の近くの映画&#xa;$ 私による映画&#xa;$ 私の地域で&#xa;$ どこの劇場&#xa;$ * どこで上映してる？&#xa;$ * どこで観られる？&#xa;$ 上映時間を検索&#xa;$ 上映時間を調べます&#xa;$ 上映時間を探します&#xa;$ 私は上映時間を見つけたいです&#xa;$ 上映時間を見つけます&#xa;$ 映画の上映時間を見つけます&#xa;$ 映画の上映時間を検索&#xa;$ 映画の上映時間を調べます&#xa;$ 映画の上映時間を探して&#xa;$ 私は、映画の上映時間を見つけたいです&#xa;$ 映画の上映時間を調べます&#xa;$ 映画の上映時間を見つけます&#xa;$ それが上映されているとき&#xa;$ それが観られる時&#xa;$ それは、いつ上映されますか&#xa;$ それはいつ観られますか">
                     <grammar>
                         <item>CheckShowtimes</item>
-                        <item>I want to check showtimes</item>
-                        <item>check showtimes</item>
+                        <item>私は上映時間を確認したいです</item>
+                        <item>上映時間の確認</item>
                         <item>$ (ZIPCODE)={ZIP_Code_Preference}</item>
                         <item>* CheckShowtimes</item>
                     </grammar>
@@ -761,7 +761,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     <action varName="Defaulted_Previous" operator="SET_TO_NO"/>
                     <input>
                         <grammar>
-                            <item>ZIP code</item>
+                            <item>郵便番号</item>
                             <item>$ (ZIPCODE)={ZIP_Code_Preference}</item>
                         </grammar>
                         <action varName="Node_Class" operator="SET_TO">showtimes</action>
@@ -772,12 +772,12 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                         <cond varName="ZIP_Code_Preference" operator="IS_BLANK"/>
                         <output id="output_2503331">
                             <prompt selectionType="RANDOM">
-                                <item>What's your ZIP code?</item>
+                                <item>あなたの郵便番号は何ですか？</item>
                             </prompt>
                             <getUserInput id="getUserInput_2503332">
                                 <input>
                                     <grammar>
-                                    <item>zipcode</item>
+                                    <item>郵便番号</item>
                                     <item>$(ZIPCODE)={ZIP_Code_Preference}</item>
                                     </grammar>
                                     <action
@@ -786,18 +786,18 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>I don&amp;apos;t know it</item>
-                                    <item>$ don&amp;apos;t know</item>
-                                    <item>$ don&amp;apos;t have</item>
+                                    <item>私はそれを知りません。</item>
+                                    <item>$ 知りません。</item>
+                                    <item>$ 持っていません。</item>
                                     </grammar>
                                     <output>
                                     <prompt>
-                                    <item>I&amp;apos;m afraid I can only use ZIP codes to find movies.</item>
+                                    <item>私は、映画を見つけるために郵便番号を使うことができるだけであるのではないかと思います。</item>
                                     </prompt>
                                     <getUserInput>
                                     <input>
                                     <grammar>
-                                    <item>Okay</item>
+                                    <item>ＯＫ</item>
                                     </grammar>
                                     <goto ref="output_2449884"/>
                                     </input>
@@ -806,13 +806,13 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>Okay</item>
+                                    <item>ＯＫ</item>
                                     </grammar>
                                     <goto ref="output_2449884"/>
                                 </input>
                                 <output>
                                     <prompt>
-                                    <item>I don&amp;apos;t think that&amp;apos;s a ZIP code. Please only type 5 numbers.</item>
+                                    <item>私はそれが郵便番号であると思いません。 5桁の番号を入力してください。</item>
                                     </prompt>
                                     <goto ref="getUserInput_2503332"/>
                                 </output>
@@ -821,18 +821,18 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                     </if>
                     <output id="output_2503344">
                         <prompt selectionType="RANDOM">
-                            <item>Okay. &lt;a target="_blank" href="http://www.fandango.com/{ZIP_Code_Preference}_movietimes?q={ZIP_Code_Preference}"&gt;Click here&lt;/a&gt; to get show times for the {ZIP_Code_Preference} area.</item>
+                            <item>ＯＫ、 &lt;a target="_blank" href="http://www.fandango.com/{ZIP_Code_Preference}_movietimes?q={ZIP_Code_Preference}"&gt;Click here&lt;/a&gt; to get show times for the {ZIP_Code_Preference} area.</item>
                         </prompt>
                         <getUserInput>
                             <input>
                                 <grammar>
-                                    <item>Okay</item>
+                                    <item>ＯＫ</item>
                                 </grammar>
                                 <goto ref="output_2449884"/>
                             </input>
                             <input>
                                 <grammar>
-                                    <item>Zipcode</item>
+                                    <item>郵便番号</item>
                                     <item>$ (ZIPCODE)={ZIP_Code_Preference}</item>
                                 </grammar>
                                 <action varName="ZIP_Code_Preference" operator="SET_TO">{ZIP_Code_Preference.source}</action>
@@ -846,11 +846,11 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                 </input>
                 <input isAutoLearnCandidate="true"
                     isRelatedNodeCandidate="true"
-                    comment="SearchMovies *&#xa;$ (RECENCY)={Recency_Preference}&#xa;$ (GENRE)={Genre_Preference}&#xa;$ (CERTIFICATION)={Certification_Preference}&#xa;look up movies&#xa;what's playing&#xa;I want to watch a movie&#xa;I want to find a movie to see&#xa;what's in theaters&#xa;$ search for movies&#xa;$ search for a movie&#xa;$ I want to see a movie&#xa;$ I want to see something&#xa;$ look up movies&#xa;$ look up a movie&#xa;$ look for movies&#xa;$ look for a movie&#xa;$ I want to find movies&#xa;$ I want find a movie&#xa;$ planning to go see&#xa;$ planning to go to the movies&#xa;$ going out to see a movie&#xa;$ planning to see a movie&#xa;$ want to go see a movie&#xa;$ thinking of seeing a movie&#xa;$ thinking we want to see a movie" id="input_2443892">
+                    comment="SearchMovies *&#xa;$ (RECENCY)={Recency_Preference}&#xa;$ (GENRE)={Genre_Preference}&#xa;$ (CERTIFICATION)={Certification_Preference}&#xa;映画を探しなさい&#xa;何を上映してる&#xa;私は映画を見たい&#xa;私が見るために映画を見つけたいです&#xa;劇場で何がやってる&#xa;$ 映画を探索&#xa;$ 映画を探索します&#xa;$ 私は映画を見たい。&#xa;$ 私は何かを見たい。&#xa;$ 映画を検索&#xa;$ 映画を探しなさい&#xa;$ 映画を捜しなさい&#xa;$ 映画を捜します&#xa;$ 私は映画を見つけたい&#xa;$ 私は映画を見つけたいです&#xa;$ 見に行くことを計画&#xa;$ 映画を見に行くことを計画&#xa;$ 映画を見に出かけます&#xa;$ 映画を見ることを計画&#xa;$ 映画を見に行きたいです&#xa;$ 映画を見ようと思う&#xa;$ 私たちは映画を見たいと思っている" id="input_2443892">
                     <grammar>
                         <item>SearchMovies</item>
-                        <item>I want to search for movies</item>
-                        <item>search for movies</item>
+                        <item>私は映画を検索します</item>
+                        <item>映画を捜してください</item>
                         <item>* SearchMovies</item>
                     </grammar>
                     <action varName="Topic" operator="SET_TO">movies</action>
@@ -872,7 +872,7 @@ Line={Class1_Confidence}+{Class2_Confidence};</script>
                         <action varName="DateTime_Current" operator="SET_TO">&amp;lt;mct:getTime&amp;gt;America/Tijuana&amp;lt;/mct:getTime&amp;gt;</action>
                         <input>
                             <grammar>
-                                <item>$ next</item>
+                                <item>$ 次</item>
                             </grammar>
                             <goto ref="profileCheck_2503417">
                                 <action varName="Recency_Preference" operator="SET_TO">Upcoming</action>
@@ -912,7 +912,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                     </input>
                     <input id="input_2443775">
                         <grammar>
-                            <item>Certification</item>
+                            <item>証明</item>
                             <item>$(CERTIFICATION)={Certification_Preference}</item>
                         </grammar>
                         <action varName="Certification_Preference" operator="SET_TO">{Certification_Preference.value:main}</action>
@@ -921,7 +921,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                     </input>
                     <input id="input_2510382">
                         <grammar>
-                            <item>Genre</item>
+                            <item>ジャンル</item>
                             <item>$ (GENRE)={Genre_Preference}</item>
                         </grammar>
                         <action varName="Genre_Preference" operator="SET_TO">{Genre_Preference.value:main}</action>
@@ -929,11 +929,11 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                     </input>
                     <input id="input_2503399">
                         <grammar>
-                            <item>family-friendly</item>
-                            <item>$ family</item>
-                            <item>$ childrens</item>
-                            <item>$ child</item>
-                            <item>$ kid</item>
+                            <item>ファミリー向け</item>
+                            <item>$ ファミリー</item>
+                            <item>$ 子供</item>
+                            <item>$ 子ども</item>
+                            <item>$ 子供</item>
                         </grammar>
                         <action varName="Certification_Preference" operator="SET_TO">G</action>
                         <action varName="Node_Class" operator="SET_TO">movies</action>
@@ -941,7 +941,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                     </input>
                     <input id="input_2443841">
                         <grammar>
-                            <item>Recency</item>
+                            <item>最近</item>
                             <item>$ (RECENCY)={Recency_Preference}</item>
                         </grammar>
                         <action varName="Node_Class" operator="SET_TO">movies</action>
@@ -950,9 +950,9 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                     </input>
                     <input id="input_2459178">
                         <grammar>
-                            <item>Location</item>
+                            <item>場所</item>
                             <item>$ (ZIPCODE)={ZIP_Code_Preference}</item>
-                            <item>$ near me</item>
+                            <item>$ 私の近くで</item>
                         </grammar>
                         <action varName="ZIP_Code_Preference" operator="SET_TO">{ZIP_Code_Preference.source}</action>
                         <goto ref="profileCheck_2503330"/>
@@ -961,12 +961,12 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                         <cond varName="Recency_Preference" operator="IS_BLANK"/>
                         <output id="output_2449874">
                             <prompt selectionType="RANDOM">
-                                <item>Something that's now playing or coming soon?</item>
+                                <item>現在上映しているか、またはもうすぐ上映する何か？</item>
                             </prompt>
                             <getUserInput id="getUserInput_2449875">
                                 <input>
                                     <grammar>
-                                    <item>Genre or Rating</item>
+                                    <item>ジャンルまたは評価</item>
                                     <item>$ (GENRE)={Genre_Preference} </item>
                                     <item>$ (CERTIFICATION)={Certification_Preference}</item>
                                     </grammar>
@@ -978,7 +978,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>how recent</item>
+                                    <item>どれくらい最近ですか。</item>
                                     <item>$ (RECENCY)={Recency_Preference}</item>
                                     </grammar>
                                     <action varName="Recency_Preference" operator="SET_TO">{Recency_Preference.value:main}</action>
@@ -987,30 +987,30 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>neither</item>
-                                    <item>$ neither</item>
-                                    <item>$ don't want either</item>
-                                    <item>no</item>
+                                    <item>どちらもありません</item>
+                                    <item>$ どちらもありません</item>
+                                    <item>$ どちらも望みません。</item>
+                                    <item>いいえ</item>
                                     </grammar>
                                     <output>
                                     <prompt>
-                                    <item>Okay.</item>
+                                    <item>ＯＫ</item>
                                     </prompt>
                                     <goto ref="output_2414737"/>
                                     </output>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>either one</item>
-                                    <item>$ either</item>
-                                    <item>$ I don't care</item>
-                                    <item>$ whichever</item>
-                                    <item>$ whenever</item>
-                                    <item>$ no preference</item>
+                                    <item>どちらのものでも</item>
+                                    <item>$ どちらでも</item>
+                                    <item>$ 私はかまいません。</item>
+                                    <item>$ どれでも</item>
+                                    <item>$ いつでも</item>
+                                    <item>$ 指定なし</item>
                                     </grammar>
                                     <output>
                                     <prompt>
-                                    <item>Okay.</item>
+                                    <item>ＯＫ</item>
                                     </prompt>
                                     <action
                                     varName="Recency_Preference" operator="SET_TO">current</action>
@@ -1019,44 +1019,44 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>yes</item>
+                                    <item>はい</item>
                                     </grammar>
                                     <output>
                                     <prompt>
-                                    <item>Something that's now playing or coming soon?</item>
+                                    <item>現在上映しているか、またはもうすぐ上映する何か？</item>
                                     </prompt>
                                     <goto ref="getUserInput_2449875"/>
                                     </output>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>why does it matter</item>
-                                    <item>$ why * matter</item>
-                                    <item>$ why * want</item>
-                                    <item>$ who cares</item>
-                                    <item>$ both</item>
-                                    <item>$ no preference</item>
-                                    <item>$ doesn't matter</item>
+                                    <item>なぜそれが重要なのか</item>
+                                    <item>$ なぜ * 重要</item>
+                                    <item>$ なぜ * 欲しい</item>
+                                    <item>$ 誰も気にしない</item>
+                                    <item>$ どちらも</item>
+                                    <item>$ 指定なし</item>
+                                    <item>$ 重要ではありません。</item>
                                     </grammar>
                                     <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>Sorry, I need to look up current and upcoming movies separately.</item>
+                                    <item>すみません、私は公開中ともれから公開される映画を別々に探す必要があります。</item>
                                     </prompt>
                                     <goto ref="getUserInput_2449875"/>
                                     </output>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>My name is</item>
-                                    <item>$ my name is</item>
-                                    <item>$ I am called</item>
-                                    <item>$ I'm called</item>
-                                    <item>$ people call me</item>
-                                    <item>$ they call me</item>
+                                    <item>私の名前は</item>
+                                    <item>$ 私の名前は</item>
+                                    <item>$ 私は呼ばれる</item>
+                                    <item>$ 私は呼ばれています</item>
+                                    <item>$ 人々は私を呼ぶ</item>
+                                    <item>$ 彼らは私を呼ぶ</item>
                                     </grammar>
                                     <output>
                                     <prompt>
-                                    <item>Sorry.</item>
+                                    <item>ごめんなさい。</item>
                                     </prompt>
                                     <goto ref="input_2530402"/>
                                     </output>
@@ -1069,18 +1069,18 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                         <cond varName="Genre_Preference" operator="IS_BLANK"/>
                         <output>
                             <prompt selectionType="RANDOM">
-                                <item>Are you in the mood for a specific genre?</item>
+                                <item>あなたは、特定のジャンルの気持ちになっていますか？</item>
                             </prompt>
                             <if>
                                 <cond varName="First_Time" operator="EQUAL_TO_YES"/>
                                 <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;Comedy&lt;/mct:input&gt;&lt;/b&gt;. Make me laugh!&lt;br&gt;&lt;/mct:link&gt;
-&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;Romance&lt;/mct:input&gt;&lt;/b&gt;, baby!&lt;br&gt;&lt;/mct:link&gt;
-&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;Horror&lt;/mct:input&gt;&lt;/b&gt;, I'm in the mood to be scared.&lt;br&gt;&lt;/mct:link&gt;
-&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;Children's&lt;/mct:input&gt;&lt;/b&gt;, let's keep it friendly.&lt;br&gt;&lt;/mct:link&gt;
-&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;Action&lt;/mct:input&gt;&lt;/b&gt;! I love a good chase scene.&lt;br&gt;&lt;/mct:link&gt;
-&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;No Preference&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;</item>
+                                    <item>&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;喜劇&lt;/mct:input&gt;&lt;/b&gt;. 私を笑わせる！&lt;br&gt;&lt;/mct:link&gt;
+&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;ロマンス&lt;/mct:input&gt;&lt;/b&gt;, ベイビー！&lt;br&gt;&lt;/mct:link&gt;
+&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;ホラー&lt;/mct:input&gt;&lt;/b&gt;, 私は、怖がる気持でいます&lt;br&gt;&lt;/mct:link&gt;
+&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;子ども用&lt;/mct:input&gt;&lt;/b&gt;, それを親しみやすくしておきましょう。&lt;br&gt;&lt;/mct:link&gt;
+&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;アクション&lt;/mct:input&gt;&lt;/b&gt;! 私は良い追跡シーンが大好きです。&lt;br&gt;&lt;/mct:link&gt;
+&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;指定なし&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;</item>
                                     </prompt>
                                     <goto ref="getUserInput_2443778"/>
                                 </output>
@@ -1088,66 +1088,66 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                             <getUserInput id="getUserInput_2443778">
                                 <input>
                                     <grammar>
-                                    <item>Unsupported genres</item>
+                                    <item>サポートされていないジャンル</item>
                                     <item>$ (UNSUPPORTED_GENRES)={Topic}</item>
                                     </grammar>
                                     <action varName="Topic" operator="SET_TO">{Topic.value:main}</action>
                                     <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>Sorry, {Topic} isn't a genre that I know. Please try another one.</item>
+                                    <item>ごめんなさい、 {Topic} は私が知っているジャンルではありません。別のものを試みてください。</item>
                                     </prompt>
                                     <goto ref="getUserInput_2443778"/>
                                     </output>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>What genres do you know?</item>
-                                    <item>$ what genres do you know</item>
-                                    <item>$ what genres are there</item>
-                                    <item>$ what genres exist</item>
-                                    <item>$ what genres do you have</item>
+                                    <item>あなたは、どんなジャンルを知っていますか？</item>
+                                    <item>$ あなたは何のジャンルを知っていますか</item>
+                                    <item>$ どのようなジャンルがあります</item>
+                                    <item>$ どんなジャンルが存在しますか</item>
+                                    <item>$ どんなジャンルを持っていますか</item>
                                     </grammar>
                                     <goto ref="output_2458051"/>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>What</item>
-                                    <item>$ what are</item>
-                                    <item>$ what is</item>
-                                    <item>$ what do</item>
-                                    <item>$ which</item>
-                                    <item>$ tell me</item>
+                                    <item>何</item>
+                                    <item>$ 何が</item>
+                                    <item>$ 何を</item>
+                                    <item>$ 何をするか</item>
+                                    <item>$ どれ</item>
+                                    <item>$ 教えてください</item>
                                     </grammar>
                                     <input>
                                     <grammar>
-                                    <item>they</item>
-                                    <item>$ they</item>
-                                    <item>$ ones</item>
-                                    <item>$ genres</item>
-                                    <item>$ genre</item>
-                                    <item>$ genre's</item>
-                                    <item>$ choices</item>
-                                    <item>$ choice</item>
-                                    <item>$ options</item>
-                                    <item>$ you have</item>
-                                    <item>$ you know</item>
-                                    <item>$ what else</item>
-                                    <item>$ available</item>
+                                    <item>それら</item>
+                                    <item>$ それら</item>
+                                    <item>$ いくつかの</item>
+                                    <item>$ ジャンル</item>
+                                    <item>$ ジャンル</item>
+                                    <item>$ ジャンルの</item>
+                                    <item>$ 選択肢</item>
+                                    <item>$ 選択</item>
+                                    <item>$ オプション</item>
+                                    <item>$ 持っています。</item>
+                                    <item>$ 知っています。</item>
+                                    <item>$ ほかに何か</item>
+                                    <item>$ 利用できます</item>
                                     </grammar>
                                     <output id="output_2458051">
                                     <prompt selectionType="RANDOM">
-                                    <item>Action, adventure, animated, comedy, crime, documentary, drama, family, fantasy, foreign, historical, horror, music, mystery, romance, science fiction, TV movie, thriller, war movies and western.</item>
+                                    <item>アクション, 冒険, アニメ, 喜劇, 犯罪, ドキュメンタリー, ドラマ, ファミリー, ファンタジー, 外国, 史実, ホラー, 音楽, ミステリー, ロマンス, ＳＦ, テレビ映画, スリラー, 戦争映画と西部劇</item>
                                     </prompt>
                                     <goto ref="getUserInput_2443778"/>
                                     </output>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>suggest</item>
-                                    <item>$ you suggest</item>
-                                    <item>$ you recommend</item>
-                                    <item>$ your favorite</item>
-                                    <item>$ your favorites</item>
+                                    <item>提案してください</item>
+                                    <item>$ あなたが示唆しています</item>
+                                    <item>$ あなたのお勧め</item>
+                                    <item>$ あなたの好きな</item>
+                                    <item>$ あなたのお気に入り</item>
                                     </grammar>
                                     <output>
                                     <prompt selectionType="RANDOM">
@@ -1160,7 +1160,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>Genre and rating</item>
+                                    <item>ジャンルと評価</item>
                                     <item>$ (GENRE)={Genre_Preference} (CERTIFICATION)={Certification_Preference}</item>
                                     <item>$ (CERTIFICATION)={Certification_Preference} (GENRE)={Genre_Preference}</item>
                                     </grammar>
@@ -1179,7 +1179,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>Genre</item>
+                                    <item>ジャンル</item>
                                     <item>$ (GENRE)={Genre_Preference}</item>
                                     </grammar>
                                     <action varName="Genre_Preference" operator="SET_TO">{Genre_Preference.value:main}</action>
@@ -1195,32 +1195,32 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>No</item>
-                                    <item>$ no</item>
-                                    <item>$ no preference</item>
-                                    <item>$ don't care</item>
-                                    <item>$ don't know</item>
-                                    <item>$ none</item>
-                                    <item>$ all</item>
-                                    <item>$ anything</item>
-                                    <item>$ any</item>
-                                    <item>$ whatever</item>
-                                    <item>$ nothing specific</item>
-                                    <item>$ don't have a preference</item>
-                                    <item>$ I don't know</item>
+                                    <item>いいえ</item>
+                                    <item>$ いいえ</item>
+                                    <item>$ 指定なし</item>
+                                    <item>$ 気にしない</item>
+                                    <item>$ 知らない</item>
+                                    <item>$ 何もない</item>
+                                    <item>$ 全部</item>
+                                    <item>$ 何でも</item>
+                                    <item>$ どれか</item>
+                                    <item>$ なんでも</item>
+                                    <item>$ 特定のものは何もありません。</item>
+                                    <item>$ 好みを持っていません</item>
+                                    <item>$ 知らない</item>
                                     </grammar>
                                     <goto ref="profileCheck_2449895"/>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>Yes</item>
+                                    <item>はい</item>
                                     <item>$ (CERTIFICATION)={Certification_Preference}</item>
                                     </grammar>
                                     <action
                                     varName="Certification_Preference" operator="SET_TO">{Certification_Preference.value:main}</action>
                                     <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>Which genre?</item>
+                                    <item>どのジャンル？</item>
                                     </prompt>
                                     <goto ref="getUserInput_2443778"/>
                                     </output>
@@ -1233,17 +1233,17 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                         <cond varName="Certification_Preference" operator="IS_BLANK"/>
                         <output>
                             <prompt selectionType="RANDOM">
-                                <item>Do you prefer a certain movie rating? </item>
+                                <item>あなたが特定の評価の映画が好きですか？ </item>
                             </prompt>
                             <if>
                                 <cond varName="First_Time" operator="EQUAL_TO_YES"/>
                                 <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;G&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;
-&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;PG&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;
-&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;PG-13&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;
-&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;R&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;
-&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;No Preference&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;</item>
+                                    <item>&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;G指定&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;
+&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;PG指定&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;
+&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;PG-13指定&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;
+&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;R指定&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;
+&lt;mct:link&gt;&lt;b&gt;&lt;mct:input&gt;指定なし&lt;/mct:input&gt;&lt;/b&gt;&lt;/mct:link&gt;</item>
                                     </prompt>
                                     <goto ref="getUserInput_2443780"/>
                                 </output>
@@ -1251,38 +1251,39 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                             <getUserInput id="getUserInput_2443780">
                                 <input>
                                     <grammar>
-                                    <item>What ratings do you know?</item>
-                                    <item>$ what ratings do you know</item>
-                                    <item>$ what ratings are there</item>
-                                    <item>$ what ratings exist</item>
-                                    <item>$ what ratings do you have</item>
+                                    <item>あなたはどのような評価を知っていますか？</item>
+                                    <item>$ どんな評価を知っていますか</item>
+                                    <item>$ どのような評価がありますか</item>
+                                    <item>$ どんな評価が存在しますか</item>
+                                    <item>$ あなたは何を評価していますか</item>
                                     </grammar>
                                     <goto ref="output_2458042"/>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>What</item>
-                                    <item>$ what are</item>
-                                    <item>$ what is</item>
-                                    <item>$ which</item>
-                                    <item>$ tell me</item>
+                                    <item>何</item>
+                                    <item>$ 何が</item>
+                                    <item>$ 何を</item>
+                                    <item>$ 何をするか</item>
+                                    <item>$ どれ</item>
+                                    <item>$ 教えてください</item>
                                     </grammar>
                                     <input>
                                     <grammar>
-                                    <item>ratings</item>
-                                    <item>$ they</item>
-                                    <item>$ ones</item>
-                                    <item>$ choices</item>
-                                    <item>$ choice</item>
-                                    <item>$ options</item>
-                                    <item>$ ratings</item>
-                                    <item>$ certifications</item>
-                                    <item>$ what else</item>
+                                    <item>評価</item>
+                                    <item>$ それら</item>
+                                    <item>$ いくつかの</item>
+                                    <item>$ 選択肢</item>
+                                    <item>$ 選択</item>
+                                    <item>$ オプション</item>
+                                    <item>$ 評価</item>
+                                    <item>$ 証明</item>
+                                    <item>$ ほかに何か</item>
                                     <item>$ available</item>
                                     </grammar>
                                     <output id="output_2458042">
                                     <prompt selectionType="RANDOM">
-                                    <item>G, PG, PG-13, R or NR.</item>
+                                    <item>G指定, PG指定, PG-13指定, R指定 or 指定なし</item>
                                     </prompt>
                                     <goto ref="getUserInput_2443780"/>
                                     </output>
@@ -1303,32 +1304,32 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>NC-17</item>
-                                    <item>$ NC-17</item>
-                                    <item>$ adult</item>
+                                    <item>NC-17指定</item>
+                                    <item>$ NC-17指定</item>
+                                    <item>$ アダルト</item>
                                     </grammar>
                                     <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>I&amp;apos;m afraid I cannot look up NC-17-rated movies.</item>
+                                    <item>残念ながら、私はNC-17指定の評価をされた映画を調べることができません。</item>
                                     </prompt>
                                     <goto ref="getUserInput_2443780"/>
                                     </output>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>No</item>
-                                    <item>$ don't care</item>
-                                    <item>$ don't know</item>
-                                    <item>$ no preference</item>
-                                    <item>$ no</item>
-                                    <item>$ none</item>
-                                    <item>$ all</item>
-                                    <item>$ any</item>
-                                    <item>$ anything</item>
-                                    <item>$ whatever</item>
-                                    <item>$ nothing specific</item>
-                                    <item>$ don't have a preference</item>
-                                    <item>$ I don't know</item>
+                                    <item>いいえ</item>
+                                    <item>$ かまいません。</item>
+                                    <item>$ 知りません。</item>
+                                    <item>$ 指定なし</item>
+                                    <item>$ いいえ</item>
+                                    <item>$ 無し</item>
+                                    <item>$ 全部</item>
+                                    <item>$ どれか</item>
+                                    <item>$ 何でも</item>
+                                    <item>$ なんでも</item>
+                                    <item>$ 何もありません</item>
+                                    <item>$ 好みを持っていません</item>
+                                    <item>$ 知りません。</item>
                                     </grammar>
                                     <action varName="Current_Index" operator="SET_TO">0</action>
                                     <action varName="Page" operator="SET_TO">new</action>
@@ -1336,11 +1337,11 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                 </input>
                                 <input>
                                     <grammar>
-                                    <item>Yes</item>
+                                    <item>はい</item>
                                     </grammar>
                                     <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>Which rating?</item>
+                                    <item>どの評価？</item>
                                     </prompt>
                                     <goto ref="getUserInput_2443780"/>
                                     </output>
@@ -1351,7 +1352,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                     </if>
                     <output id="output_2456875">
                         <prompt selectionType="RANDOM">
-                            <item>Okay.</item>
+                            <item>ＯＫ</item>
                         </prompt>
                         <output id="output_2456876">
                             <prompt selectionType="RANDOM">
@@ -1370,7 +1371,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                     <cond varName="Num_Movies" operator="EQUALS">0</cond>
                                     <output id="output_2460234">
                                     <prompt selectionType="RANDOM">
-                                    <item>I'm afraid I found {Num_Movies} {Recency_Preference} movies matching {Certification_Preference} {Genre_Preference}. Try changing your criteria.</item>
+                                    <item>残念ながら {Num_Movies} {Recency_Preference} 該当する映画は {Certification_Preference} {Genre_Preference}見つかりませんでした。検索条件を変更してみてください。</item>
                                     </prompt>
                                     <getUserInput>
                                     <input>
@@ -1395,7 +1396,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                     <cond varName="Genre_Preference" operator="IS_BLANK"/>
                                     <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>Fine choice, {User_Name}! I found {Num_Movies} results for {Recency_Preference} {Certification_Preference}-rated movies.</item>
+                                    <item>素晴らしい選択、 {User_Name}! 私は {Num_Movies} 本の映画を見つけました。 {Recency_Preference} {Certification_Preference}-評価された映画。</item>
                                     </prompt>
                                     <goto ref="getUserInput_2456877"/>
                                     </output>
@@ -1406,7 +1407,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                     <cond varName="Genre_Preference" operator="HAS_VALUE"/>
                                     <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>Nice choice, {User_Name}! I found {Num_Movies} results for {Recency_Preference} {Genre_Preference} movies.</item>
+                                    <item>よい選択、 {User_Name}! 私は {Num_Movies} 本の映画を見つけました。 {Recency_Preference} {Genre_Preference} 映画。</item>
                                     </prompt>
                                     <goto ref="getUserInput_2456877"/>
                                     </output>
@@ -1424,12 +1425,12 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                     </if>
                                     <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>Good choices, {User_Name}! I found {Num_Movies} results for {Recency_Preference} {Certification_Preference}-rated {Genre_Preference} movies.</item>
+                                    <itemよい選択、 {User_Name}! 私は {Num_Movies} 本の映画を見つけました。 {Recency_Preference} {Certification_Preference}-rated {Genre_Preference} 映画。</item>
                                     </prompt>
                                     <getUserInput id="getUserInput_2456877">
                                     <input id="input_2456878">
                                     <grammar>
-                                    <item>Okay</item>
+                                    <item>OK</item>
                                     </grammar>
                                     <output id="output_2460098">
                                     <prompt>
@@ -1438,22 +1439,22 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                     <getUserInput>
                                     <input>
                                     <grammar>
-                                    <item>Go back</item>
-                                    <item>$ go back</item>
-                                    <item>$ wait</item>
-                                    <item>$ not done</item>
-                                    <item>$ not finished</item>
+                                    <item>戻ってください</item>
+                                    <item>$ 戻ってください</item>
+                                    <item>$ 待ちなさい</item>
+                                    <item>$ 完了していない</item>
+                                    <item>$ 終了していません</item>
                                     </grammar>
                                     <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>Okay.</item>
+                                    <item>OK</item>
                                     </prompt>
                                     <goto ref="getUserInput_2456877"/>
                                     </output>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>Yes</item>
+                                    <item>はい</item>
                                     </grammar>
                                     <action
                                     varName="Certification_Preference" operator="SET_TO_BLANK"/>
@@ -1471,11 +1472,11 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>No</item>
+                                    <item>いいえ</item>
                                     </grammar>
                                     <output>
                                     <prompt>
-                                    <item>Okay.</item>
+                                    <item>OK</item>
                                     </prompt>
                                     <goto ref="output_2458386"/>
                                     </output>
@@ -1486,13 +1487,13 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>What do you mean</item>
-                                    <item>$ what do you mean</item>
-                                    <item>$ what does that mean</item>
-                                    <item>$ what did you mean</item>
-                                    <item>$ what were those movies again</item>
-                                    <item>$ what did you mean</item>
-                                    <item>$ what are those</item>
+                                    <item>どういう意味ですか</item>
+                                    <item>$ どういう意味ですか</item>
+                                    <item>$ それはどういう意味ですか</item>
+                                    <item>$ どういう意味</item>
+                                    <item>$ 再びそれらの映画であったこと</item>
+                                    <item>$ 何が言いたいのですか？</item>
+                                    <item>$ それは何ですか？</item>
                                     </grammar>
                                     <output>
                                     <prompt selectionType="RANDOM">
@@ -1503,7 +1504,7 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>When are those showing?</item>
+                                    <item>それはいつ観られますか？</item>
                                     <item>$ when * showing</item>
                                     <item>$ when * playing</item>
                                     <item>$ when * play</item>
@@ -1517,13 +1518,13 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                     </grammar>
                                     <output id="output_2459418">
                                     <prompt selectionType="RANDOM">
-                                    <item>Oh. You mean movies in your area. I must direct you to Fandango for that. Would you like the link?</item>
+                                    <item>おお。あなたのお住まいの地域で映画を探すなら、ファンダンゴがいいと思います。リンクを表示しますか？</item>
                                     </prompt>
                                     <getUserInput>
                                     <input>
                                     <grammar>
-                                    <item>Yes</item>
-                                    <item>okay</item>
+                                    <item>はい</item>
+                                    <item>OK</item>
                                     </grammar>
                                     <output>
                                     <prompt selectionType="RANDOM">
@@ -1534,11 +1535,11 @@ EndTime={DateTime_Mentioned_ENT.value:FROM_FULL}</script>
                                     </input>
                                     <input>
                                     <grammar>
-                                    <item>No</item>
+                                    <item>いいえ</item>
                                     </grammar>
                                     <output>
                                     <prompt selectionType="RANDOM">
-                                    <item>Okay.</item>
+                                    <item>OK</item>
                                     </prompt>
                                     <goto ref="getUserInput_2456877"/>
                                     </output>
