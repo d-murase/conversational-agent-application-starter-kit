@@ -84,7 +84,7 @@ function trainClassifier(callback) {
       callback(err);
     else if (data === '') {
       classifierService.create({
-        language: 'en',
+        language: 'ja',
         name: 'movies-' + new Date().valueOf(),
         training_data: fs.createReadStream(classifierTrainingFile)
       }, function(err, classifier) {
